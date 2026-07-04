@@ -70,9 +70,11 @@ for (let i = 1; i <= 500; i++) {
 
     // Interactive Quiz Slides Distribution
     // Each 50-slide module contains:
-    // - 5 Multiple Choice (e.g., offset 10, 20, 30, 40, 48)
-    // - 3 Matching (e.g., offset 15, 25, 35)
-    // - 3 Short Answer (e.g., offset 18, 28, 38)
+    // - 5 Multiple Choice (offsets 10, 20, 30, 40, 48)
+    // - 3 Matching (offsets 15, 25, 35)
+    // - 3 Short Answer (offsets 18, 28, 38)
+    // - 4 True/False (offsets 12, 22, 32, 42)
+    // - 4 Fill-in-the-blank (offsets 14, 24, 34, 44)
     const offset = (i - 1) % 50;
 
     if ([10, 20, 30, 40, 48].includes(offset)) {
@@ -84,6 +86,12 @@ for (let i = 1; i <= 500; i++) {
     } else if ([18, 28, 38].includes(offset)) {
         const saIndex = Math.floor((i / 50) * 3) + Math.floor(offset / 10);
         slides.push(generateShortAnswerSlide(i, modTitle, saIndex));
+    } else if ([12, 22, 32, 42].includes(offset)) {
+        const tfIndex = Math.floor((i / 50) * 4) + Math.floor(offset / 10);
+        slides.push(generateTrueFalseSlide(i, modTitle, tfIndex));
+    } else if ([14, 24, 34, 44].includes(offset)) {
+        const fbIndex = Math.floor((i / 50) * 4) + Math.floor(offset / 10);
+        slides.push(generateFillInBlankSlide(i, modTitle, fbIndex));
     } else if (offset % 4 === 1) {
         // News case slide
         slides.push(generateNewsCaseSlide(i, modTitle));
@@ -230,6 +238,93 @@ function generateShortAnswerSlide(id, modTitle, index) {
         modelAnswer: s.modelAnswer,
         keyPoints: s.keyPoints,
         notes: `本簡答題培養學生對於 ${modTitle} 的深入思辯與論述能力。`
+    };
+}
+
+function generateTrueFalseSlide(id, modTitle, index) {
+    const tfQuestions = [
+        {
+            title: `【素養是非題 Slide ${id}】行政處分之單方性與對等立場`,
+            scenario: "行政機關在做成『行政處分』時，與相對人（人民）係站立在對等平等的地位，因此該處分必須獲得人民同意後始能生效。",
+            isTrue: false,
+            explanation: "錯誤。行政處分係行政機關單方基於公權力高位所為之決定（單方性），不需要人民同意即具有法律效力。"
+        },
+        {
+            title: `【素養是非題 Slide ${id}】人身自由之法律保留層級`,
+            scenario: "警察機關得逕行以內部訂定之作業要點或命令，對違反交通規則之人民處以 3 日之拘留。",
+            isTrue: false,
+            explanation: "錯誤。依釋字第 443 號解釋，剝奪人身自由屬於憲法保留與絕對法律保留事項，嚴禁由行政機關以行政命令規定！"
+        },
+        {
+            title: `【素養是非題 Slide ${id}】不法不得主張平等原則`,
+            scenario: "騎士未戴安全帽被警察開單，得主張『其他未戴帽騎士亦未被開單』為由，要求撤銷該罰單。",
+            isTrue: false,
+            explanation: "錯誤。依『不法不得主張平等』原則，平等原則僅適用於『合法』之平等對待，人民不得主張比照他人違法不受處罰。"
+        },
+        {
+            title: `【素養是非題 Slide ${id}】行政罰與刑罰之一行為不二罰`,
+            scenario: "行為人因酒駕公共危險罪經法院判處有期徒刑確定後，行政機關原則上不得再對其開立相同金錢性質之行政罰鍰。",
+            isTrue: true,
+            explanation: "正確。依行政罰法第 24 條『刑事優先原則與一行為不二罰』，同一酒駕行為已受刑罰判決者，不得再重複裁處行政罰鍰。"
+        }
+    ];
+
+    const tf = tfQuestions[index % tfQuestions.length];
+    return {
+        id: id,
+        module: modTitle,
+        type: "true_false",
+        category: "素養導向是非題",
+        title: tf.title,
+        scenario: tf.scenario,
+        isTrue: tf.isTrue,
+        explanation: tf.explanation,
+        notes: `本題測試學生在 ${modTitle} 的是非判斷與法理辨析。`
+    };
+}
+
+function generateFillInBlankSlide(id, modTitle, index) {
+    const blankQuestions = [
+        {
+            title: `【素養填充題 Slide ${id}】行政處分黃金要件填空`,
+            text: "行政處分係指行政機關就 [blank1] 事件所為之 [blank2] 對外直接發生法律效果之單方行政行為。",
+            blanks: [
+                { label: "填空 1", answer: "公法" },
+                { label: "填空 2", answer: "具體" }
+            ],
+            explanation: "行政處分黃金六要素中，標的必須屬於『公法』事件，且內容必須針對『具體』之特定人或特定事。"
+        },
+        {
+            title: `【素養填充題 Slide ${id}】層次化法律保留體系釋字填空`,
+            text: "我國大法官在釋字第 [blank1] 號解釋中，將法律保留劃分為憲法保留、絕對法律保留、[blank2] 法律保留與非法律保留四大層次。",
+            blanks: [
+                { label: "填空 1", answer: "443" },
+                { label: "填空 2", answer: "相對" }
+            ],
+            explanation: "釋字第 443 號解釋建立了層次化法律保留體系，相對法律保留得由法律以明確授權委由法規命令規範。"
+        },
+        {
+            title: `【素養填充題 Slide ${id}】訴願提起法定不變期間填空`,
+            text: "人民不服違法或不當之行政處分，應於處分送達之次日起 [blank1] 日內，向原處分機關之上級機關提起 [blank2] 。",
+            blanks: [
+                { label: "填空 1", answer: "30" },
+                { label: "填空 2", answer: "訴願" }
+            ],
+            explanation: "依訴願法第 14 條規定，訴願之提起應於行政處分送達之次日起 30 日內為之。"
+        }
+    ];
+
+    const b = blankQuestions[index % blankQuestions.length];
+    return {
+        id: id,
+        module: modTitle,
+        type: "fill_in_blank",
+        category: "素養導向填充題",
+        title: b.title,
+        text: b.text,
+        blanks: b.blanks,
+        explanation: b.explanation,
+        notes: `本填空題考察學生對 ${modTitle} 中核心名詞與法條數字的精準記憶。`
     };
 }
 

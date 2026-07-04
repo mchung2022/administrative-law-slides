@@ -740,6 +740,96 @@ body {
     margin-bottom: 10px;
 }
 
+/* Quiz UI Components - True/False (是非題) */
+.tf-options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.tf-option-card {
+    background: rgba(255, 255, 255, 0.04);
+    border: 2px solid var(--border-color);
+    border-radius: var(--radius-md);
+    padding: 24px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 1.25rem;
+    font-weight: 700;
+    transition: all 0.25s ease;
+}
+
+.tf-icon {
+    font-size: 3rem;
+}
+
+.tf-option-card.tf-true:hover {
+    background: rgba(16, 185, 129, 0.15);
+    border-color: var(--accent-green);
+}
+.tf-option-card.tf-false:hover {
+    background: rgba(239, 68, 68, 0.15);
+    border-color: var(--accent-red);
+}
+
+.tf-option-card.correct {
+    background: rgba(16, 185, 129, 0.25) !important;
+    border-color: var(--accent-green) !important;
+    box-shadow: 0 0 16px rgba(16, 185, 129, 0.4);
+}
+.tf-option-card.wrong {
+    background: rgba(239, 68, 68, 0.25) !important;
+    border-color: var(--accent-red) !important;
+    box-shadow: 0 0 16px rgba(239, 68, 68, 0.4);
+}
+
+/* Quiz UI Components - Fill in the Blank (填充題) */
+.blank-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.blank-text-box {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    padding: 24px;
+    font-size: 1.1rem;
+    line-height: 2.2;
+}
+
+.blank-input {
+    background: rgba(0, 0, 0, 0.35);
+    border: 2px solid var(--primary);
+    border-radius: var(--radius-sm);
+    color: var(--secondary);
+    font-family: var(--font-sans);
+    font-size: 1.05rem;
+    font-weight: 700;
+    padding: 4px 12px;
+    margin: 0 4px;
+    outline: none;
+    min-width: 140px;
+    text-align: center;
+}
+
+.blank-input.correct {
+    border-color: var(--accent-green);
+    background: rgba(16, 185, 129, 0.2);
+    color: #fff;
+}
+.blank-input.wrong {
+    border-color: var(--accent-red);
+    background: rgba(239, 68, 68, 0.2);
+    color: #fff;
+}
+
 .scoring-points {
     margin-top: 12px;
     background: rgba(255, 255, 255, 0.05);

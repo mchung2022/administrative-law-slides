@@ -249,6 +249,12 @@ document.addEventListener('DOMContentLoaded', () => {
             case 'short_answer':
                 renderShortAnswerSlide(slide);
                 break;
+            case 'true_false':
+                renderTrueFalseSlide(slide);
+                break;
+            case 'fill_in_blank':
+                renderFillInBlankSlide(slide);
+                break;
             case 'summary':
                 renderSummarySlide(slide);
                 break;
@@ -594,7 +600,113 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // 7. Summary Slide
+    // 7. True/False Slide (是非題)
+    function renderTrueFalseSlide(slide) {
+        slideStage.innerHTML = `
+            <div class="slide-header-box">
+                <span class="slide-category-tag" style="color: var(--secondary);">【素養是非題】</span>
+                <h2 class="slide-title">${slide.title}</h2>
+            </div>
+            <div class="slide-content-body quiz-container">
+                <div class="quiz-scenario animate-item">
+                    📖 <strong>敘述內容：</strong> ${slide.scenario}
+                </div>
+                <div class="tf-options">
+                    <div class="tf-option-card tf-true animate-item" data-val="true">
+                        <span class="tf-icon">⭕</span>
+                        <span>正確 (True)</span>
+                    </div>
+                    <div class="tf-option-card tf-false animate-item" data-val="false">
+                        <span class="tf-icon">❌</span>
+                        <span>錯誤 (False)</span>
+                    </div>
+                </div>
+                <div class="quiz-explanation" id="tf-exp">
+                    <h5>解析說明與法理依據：</h5>
+                    <p>${slide.explanation}</p>
+                </div>
+            </div>
+        `;
+
+        const tfCards = slideStage.querySelectorAll('.tf-option-card');
+        const expBox = slideStage.querySelector('#tf-exp');
+
+        tfCards.forEach(card => {
+            card.addEventListener('click', () => {
+                const userVal = card.getAttribute('data-val') === 'true';
+                tfCards.forEach(c => c.classList.remove('correct', 'wrong'));
+
+                if (userVal === slide.isTrue) {
+                    card.classList.add('correct');
+                } else {
+                    card.classList.add('wrong');
+                }
+                expBox.classList.add('active');
+            });
+        });
+    }
+
+    // 8. Fill-in-the-blank Slide (填充題)
+    function renderFillInBlankSlide(slide) {
+        let renderedText = slide.text;
+        slide.blanks.forEach((b, idx) => {
+            const inputHtml = `<input type="text" class="blank-input animate-item" data-blank-index="${idx}" data-ans="${b.answer}" placeholder="請填寫【${b.label || '答案'}】">`;
+            renderedText = renderedText.replace(`[blank${idx + 1}]`, inputHtml);
+        });
+
+        slideStage.innerHTML = `
+            <div class="slide-header-box">
+                <span class="slide-category-tag" style="color: var(--accent-purple);">【素養填充題】</span>
+                <h2 class="slide-title">${slide.title}</h2>
+                <p class="slide-subtitle">請在下方文字中的空白處填入正確的法學名詞或數字：</p>
+            </div>
+            <div class="slide-content-body blank-container">
+                <div class="blank-text-box animate-item">
+                    ${renderedText}
+                </div>
+                <div class="matching-actions animate-item">
+                    <button class="action-btn" id="btn-check-blank">驗證填空答案</button>
+                    <span id="blank-feedback" style="font-weight:700; font-size:1rem; margin-left:12px;"></span>
+                </div>
+                <div class="quiz-explanation" id="blank-exp">
+                    <h5>解析說明與正確解答：</h5>
+                    <p>${slide.explanation}</p>
+                </div>
+            </div>
+        `;
+
+        const btnCheck = slideStage.querySelector('#btn-check-blank');
+        const blankInputs = slideStage.querySelectorAll('.blank-input');
+        const feedback = slideStage.querySelector('#blank-feedback');
+        const expBox = slideStage.querySelector('#blank-exp');
+
+        btnCheck.addEventListener('click', () => {
+            let correctCount = 0;
+            blankInputs.forEach(input => {
+                const targetAns = input.getAttribute('data-ans').trim().toLowerCase();
+                const userVal = input.value.trim().toLowerCase();
+                if (userVal === targetAns || (userVal && targetAns.includes(userVal))) {
+                    input.classList.remove('wrong');
+                    input.classList.add('correct');
+                    correctCount++;
+                } else {
+                    input.classList.remove('correct');
+                    input.classList.add('wrong');
+                }
+            });
+
+            if (correctCount === blankInputs.length) {
+                feedback.style.color = 'var(--accent-green)';
+                feedback.textContent = `🎉 全對！全部 ${correctCount} 個填空皆正確！`;
+            } else {
+                feedback.style.color = 'var(--accent-amber)';
+                feedback.textContent = `答對 ${correctCount} / ${blankInputs.length} 個填空！紅色代表需修正。`;
+            }
+            expBox.classList.add('active');
+        });
+    }
+
+    // 9. Summary Slide
     function renderSummarySlide(slide) {
         slideStage.innerHTML = `
             <div class="slide-header-box">
