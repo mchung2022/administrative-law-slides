@@ -53,7 +53,7 @@ window.slidesData = [
     "module": "Module 1: 行政與行政法概論與現代法治國",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 4: Module 1: 行政與行政法概論與現代法治國 核心觀念第 5 講",
+    "title": "Slide 4: Module 1: 行政與行政法概論與現代法治國 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -77,7 +77,7 @@ window.slidesData = [
     "module": "Module 1: 行政與行政法概論與現代法治國",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 5: Module 1: 行政與行政法概論與現代法治國 核心觀念第 6 講",
+    "title": "Slide 5: Module 1: 行政與行政法概論與現代法治國 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -136,7 +136,7 @@ window.slidesData = [
     "module": "Module 1: 行政與行政法概論與現代法治國",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 8: Module 1: 行政與行政法概論與現代法治國 核心觀念第 9 講",
+    "title": "Slide 8: Module 1: 行政與行政法概論與現代法治國 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -160,7 +160,7 @@ window.slidesData = [
     "module": "Module 1: 行政與行政法概論與現代法治國",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 9: Module 1: 行政與行政法概論與現代法治國 核心觀念第 10 講",
+    "title": "Slide 9: Module 1: 行政與行政法概論與現代法治國 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -219,7 +219,7 @@ window.slidesData = [
     "module": "Module 1: 行政與行政法概論與現代法治國",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 12: Module 1: 行政與行政法概論與現代法治國 核心觀念第 13 講",
+    "title": "Slide 12: Module 1: 行政與行政法概論與現代法治國 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -243,7 +243,7 @@ window.slidesData = [
     "module": "Module 1: 行政與行政法概論與現代法治國",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 13: Module 1: 行政與行政法概論與現代法治國 核心觀念第 14 講",
+    "title": "Slide 13: Module 1: 行政與行政法概論與現代法治國 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -333,7 +333,7 @@ window.slidesData = [
     "module": "Module 1: 行政與行政法概論與現代法治國",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 17: Module 1: 行政與行政法概論與現代法治國 核心觀念第 18 講",
+    "title": "Slide 17: Module 1: 行政與行政法概論與現代法治國 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -389,7 +389,7 @@ window.slidesData = [
     "module": "Module 1: 行政與行政法概論與現代法治國",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 20: Module 1: 行政與行政法概論與現代法治國 核心觀念第 21 講",
+    "title": "Slide 20: Module 1: 行政與行政法概論與現代法治國 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -465,7 +465,7 @@ window.slidesData = [
     "module": "Module 1: 行政與行政法概論與現代法治國",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 24: Module 1: 行政與行政法概論與現代法治國 核心觀念第 25 講",
+    "title": "Slide 24: Module 1: 行政與行政法概論與現代法治國 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -489,7 +489,7 @@ window.slidesData = [
     "module": "Module 1: 行政與行政法概論與現代法治國",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 25: Module 1: 行政與行政法概論與現代法治國 核心觀念第 26 講",
+    "title": "Slide 25: Module 1: 行政與行政法概論與現代法治國 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -561,7 +561,7 @@ window.slidesData = [
     "module": "Module 1: 行政與行政法概論與現代法治國",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 28: Module 1: 行政與行政法概論與現代法治國 核心觀念第 29 講",
+    "title": "Slide 28: Module 1: 行政與行政法概論與現代法治國 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -635,7 +635,7 @@ window.slidesData = [
     "module": "Module 1: 行政與行政法概論與現代法治國",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 32: Module 1: 行政與行政法概論與現代法治國 核心觀念第 33 講",
+    "title": "Slide 32: Module 1: 行政與行政法概論與現代法治國 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -659,7 +659,7 @@ window.slidesData = [
     "module": "Module 1: 行政與行政法概論與現代法治國",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 33: Module 1: 行政與行政法概論與現代法治國 核心觀念第 34 講",
+    "title": "Slide 33: Module 1: 行政與行政法概論與現代法治國 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -749,7 +749,7 @@ window.slidesData = [
     "module": "Module 1: 行政與行政法概論與現代法治國",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 37: Module 1: 行政與行政法概論與現代法治國 核心觀念第 38 講",
+    "title": "Slide 37: Module 1: 行政與行政法概論與現代法治國 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -805,7 +805,7 @@ window.slidesData = [
     "module": "Module 1: 行政與行政法概論與現代法治國",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 40: Module 1: 行政與行政法概論與現代法治國 核心觀念第 41 講",
+    "title": "Slide 40: Module 1: 行政與行政法概論與現代法治國 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -881,7 +881,7 @@ window.slidesData = [
     "module": "Module 1: 行政與行政法概論與現代法治國",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 44: Module 1: 行政與行政法概論與現代法治國 核心觀念第 45 講",
+    "title": "Slide 44: Module 1: 行政與行政法概論與現代法治國 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -905,7 +905,7 @@ window.slidesData = [
     "module": "Module 1: 行政與行政法概論與現代法治國",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 45: Module 1: 行政與行政法概論與現代法治國 核心觀念第 46 講",
+    "title": "Slide 45: Module 1: 行政與行政法概論與現代法治國 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -964,7 +964,7 @@ window.slidesData = [
     "module": "Module 1: 行政與行政法概論與現代法治國",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 48: Module 1: 行政與行政法概論與現代法治國 核心觀念第 49 講",
+    "title": "Slide 48: Module 1: 行政與行政法概論與現代法治國 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -1028,7 +1028,7 @@ window.slidesData = [
     "module": "Module 2: 依法行政原則與層次化法律保留",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 51: Module 2: 依法行政原則與層次化法律保留 核心觀念第 2 講",
+    "title": "Slide 51: Module 2: 依法行政原則與層次化法律保留 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -1087,7 +1087,7 @@ window.slidesData = [
     "module": "Module 2: 依法行政原則與層次化法律保留",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 54: Module 2: 依法行政原則與層次化法律保留 核心觀念第 5 講",
+    "title": "Slide 54: Module 2: 依法行政原則與層次化法律保留 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -1111,7 +1111,7 @@ window.slidesData = [
     "module": "Module 2: 依法行政原則與層次化法律保留",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 55: Module 2: 依法行政原則與層次化法律保留 核心觀念第 6 講",
+    "title": "Slide 55: Module 2: 依法行政原則與層次化法律保留 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -1170,7 +1170,7 @@ window.slidesData = [
     "module": "Module 2: 依法行政原則與層次化法律保留",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 58: Module 2: 依法行政原則與層次化法律保留 核心觀念第 9 講",
+    "title": "Slide 58: Module 2: 依法行政原則與層次化法律保留 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -1194,7 +1194,7 @@ window.slidesData = [
     "module": "Module 2: 依法行政原則與層次化法律保留",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 59: Module 2: 依法行政原則與層次化法律保留 核心觀念第 10 講",
+    "title": "Slide 59: Module 2: 依法行政原則與層次化法律保留 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -1253,7 +1253,7 @@ window.slidesData = [
     "module": "Module 2: 依法行政原則與層次化法律保留",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 62: Module 2: 依法行政原則與層次化法律保留 核心觀念第 13 講",
+    "title": "Slide 62: Module 2: 依法行政原則與層次化法律保留 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -1277,7 +1277,7 @@ window.slidesData = [
     "module": "Module 2: 依法行政原則與層次化法律保留",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 63: Module 2: 依法行政原則與層次化法律保留 核心觀念第 14 講",
+    "title": "Slide 63: Module 2: 依法行政原則與層次化法律保留 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -1367,7 +1367,7 @@ window.slidesData = [
     "module": "Module 2: 依法行政原則與層次化法律保留",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 67: Module 2: 依法行政原則與層次化法律保留 核心觀念第 18 講",
+    "title": "Slide 67: Module 2: 依法行政原則與層次化法律保留 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -1423,7 +1423,7 @@ window.slidesData = [
     "module": "Module 2: 依法行政原則與層次化法律保留",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 70: Module 2: 依法行政原則與層次化法律保留 核心觀念第 21 講",
+    "title": "Slide 70: Module 2: 依法行政原則與層次化法律保留 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -1499,7 +1499,7 @@ window.slidesData = [
     "module": "Module 2: 依法行政原則與層次化法律保留",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 74: Module 2: 依法行政原則與層次化法律保留 核心觀念第 25 講",
+    "title": "Slide 74: Module 2: 依法行政原則與層次化法律保留 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -1523,7 +1523,7 @@ window.slidesData = [
     "module": "Module 2: 依法行政原則與層次化法律保留",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 75: Module 2: 依法行政原則與層次化法律保留 核心觀念第 26 講",
+    "title": "Slide 75: Module 2: 依法行政原則與層次化法律保留 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -1595,7 +1595,7 @@ window.slidesData = [
     "module": "Module 2: 依法行政原則與層次化法律保留",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 78: Module 2: 依法行政原則與層次化法律保留 核心觀念第 29 講",
+    "title": "Slide 78: Module 2: 依法行政原則與層次化法律保留 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -1669,7 +1669,7 @@ window.slidesData = [
     "module": "Module 2: 依法行政原則與層次化法律保留",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 82: Module 2: 依法行政原則與層次化法律保留 核心觀念第 33 講",
+    "title": "Slide 82: Module 2: 依法行政原則與層次化法律保留 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -1693,7 +1693,7 @@ window.slidesData = [
     "module": "Module 2: 依法行政原則與層次化法律保留",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 83: Module 2: 依法行政原則與層次化法律保留 核心觀念第 34 講",
+    "title": "Slide 83: Module 2: 依法行政原則與層次化法律保留 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -1783,7 +1783,7 @@ window.slidesData = [
     "module": "Module 2: 依法行政原則與層次化法律保留",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 87: Module 2: 依法行政原則與層次化法律保留 核心觀念第 38 講",
+    "title": "Slide 87: Module 2: 依法行政原則與層次化法律保留 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -1839,7 +1839,7 @@ window.slidesData = [
     "module": "Module 2: 依法行政原則與層次化法律保留",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 90: Module 2: 依法行政原則與層次化法律保留 核心觀念第 41 講",
+    "title": "Slide 90: Module 2: 依法行政原則與層次化法律保留 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -1915,7 +1915,7 @@ window.slidesData = [
     "module": "Module 2: 依法行政原則與層次化法律保留",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 94: Module 2: 依法行政原則與層次化法律保留 核心觀念第 45 講",
+    "title": "Slide 94: Module 2: 依法行政原則與層次化法律保留 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -1939,7 +1939,7 @@ window.slidesData = [
     "module": "Module 2: 依法行政原則與層次化法律保留",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 95: Module 2: 依法行政原則與層次化法律保留 核心觀念第 46 講",
+    "title": "Slide 95: Module 2: 依法行政原則與層次化法律保留 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -1998,7 +1998,7 @@ window.slidesData = [
     "module": "Module 2: 依法行政原則與層次化法律保留",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 98: Module 2: 依法行政原則與層次化法律保留 核心觀念第 49 講",
+    "title": "Slide 98: Module 2: 依法行政原則與層次化法律保留 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -2062,7 +2062,7 @@ window.slidesData = [
     "module": "Module 3: 一般法律原則（一）：比例原則與平等原則",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 101: Module 3: 一般法律原則（一）：比例原則與平等原則 核心觀念第 2 講",
+    "title": "Slide 101: Module 3: 一般法律原則（一）：比例原則與平等原則 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -2121,7 +2121,7 @@ window.slidesData = [
     "module": "Module 3: 一般法律原則（一）：比例原則與平等原則",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 104: Module 3: 一般法律原則（一）：比例原則與平等原則 核心觀念第 5 講",
+    "title": "Slide 104: Module 3: 一般法律原則（一）：比例原則與平等原則 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -2145,7 +2145,7 @@ window.slidesData = [
     "module": "Module 3: 一般法律原則（一）：比例原則與平等原則",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 105: Module 3: 一般法律原則（一）：比例原則與平等原則 核心觀念第 6 講",
+    "title": "Slide 105: Module 3: 一般法律原則（一）：比例原則與平等原則 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -2204,7 +2204,7 @@ window.slidesData = [
     "module": "Module 3: 一般法律原則（一）：比例原則與平等原則",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 108: Module 3: 一般法律原則（一）：比例原則與平等原則 核心觀念第 9 講",
+    "title": "Slide 108: Module 3: 一般法律原則（一）：比例原則與平等原則 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -2228,7 +2228,7 @@ window.slidesData = [
     "module": "Module 3: 一般法律原則（一）：比例原則與平等原則",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 109: Module 3: 一般法律原則（一）：比例原則與平等原則 核心觀念第 10 講",
+    "title": "Slide 109: Module 3: 一般法律原則（一）：比例原則與平等原則 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -2287,7 +2287,7 @@ window.slidesData = [
     "module": "Module 3: 一般法律原則（一）：比例原則與平等原則",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 112: Module 3: 一般法律原則（一）：比例原則與平等原則 核心觀念第 13 講",
+    "title": "Slide 112: Module 3: 一般法律原則（一）：比例原則與平等原則 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -2311,7 +2311,7 @@ window.slidesData = [
     "module": "Module 3: 一般法律原則（一）：比例原則與平等原則",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 113: Module 3: 一般法律原則（一）：比例原則與平等原則 核心觀念第 14 講",
+    "title": "Slide 113: Module 3: 一般法律原則（一）：比例原則與平等原則 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -2401,7 +2401,7 @@ window.slidesData = [
     "module": "Module 3: 一般法律原則（一）：比例原則與平等原則",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 117: Module 3: 一般法律原則（一）：比例原則與平等原則 核心觀念第 18 講",
+    "title": "Slide 117: Module 3: 一般法律原則（一）：比例原則與平等原則 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -2457,7 +2457,7 @@ window.slidesData = [
     "module": "Module 3: 一般法律原則（一）：比例原則與平等原則",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 120: Module 3: 一般法律原則（一）：比例原則與平等原則 核心觀念第 21 講",
+    "title": "Slide 120: Module 3: 一般法律原則（一）：比例原則與平等原則 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -2533,7 +2533,7 @@ window.slidesData = [
     "module": "Module 3: 一般法律原則（一）：比例原則與平等原則",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 124: Module 3: 一般法律原則（一）：比例原則與平等原則 核心觀念第 25 講",
+    "title": "Slide 124: Module 3: 一般法律原則（一）：比例原則與平等原則 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -2557,7 +2557,7 @@ window.slidesData = [
     "module": "Module 3: 一般法律原則（一）：比例原則與平等原則",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 125: Module 3: 一般法律原則（一）：比例原則與平等原則 核心觀念第 26 講",
+    "title": "Slide 125: Module 3: 一般法律原則（一）：比例原則與平等原則 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -2629,7 +2629,7 @@ window.slidesData = [
     "module": "Module 3: 一般法律原則（一）：比例原則與平等原則",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 128: Module 3: 一般法律原則（一）：比例原則與平等原則 核心觀念第 29 講",
+    "title": "Slide 128: Module 3: 一般法律原則（一）：比例原則與平等原則 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -2703,7 +2703,7 @@ window.slidesData = [
     "module": "Module 3: 一般法律原則（一）：比例原則與平等原則",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 132: Module 3: 一般法律原則（一）：比例原則與平等原則 核心觀念第 33 講",
+    "title": "Slide 132: Module 3: 一般法律原則（一）：比例原則與平等原則 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -2727,7 +2727,7 @@ window.slidesData = [
     "module": "Module 3: 一般法律原則（一）：比例原則與平等原則",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 133: Module 3: 一般法律原則（一）：比例原則與平等原則 核心觀念第 34 講",
+    "title": "Slide 133: Module 3: 一般法律原則（一）：比例原則與平等原則 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -2817,7 +2817,7 @@ window.slidesData = [
     "module": "Module 3: 一般法律原則（一）：比例原則與平等原則",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 137: Module 3: 一般法律原則（一）：比例原則與平等原則 核心觀念第 38 講",
+    "title": "Slide 137: Module 3: 一般法律原則（一）：比例原則與平等原則 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -2873,7 +2873,7 @@ window.slidesData = [
     "module": "Module 3: 一般法律原則（一）：比例原則與平等原則",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 140: Module 3: 一般法律原則（一）：比例原則與平等原則 核心觀念第 41 講",
+    "title": "Slide 140: Module 3: 一般法律原則（一）：比例原則與平等原則 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -2949,7 +2949,7 @@ window.slidesData = [
     "module": "Module 3: 一般法律原則（一）：比例原則與平等原則",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 144: Module 3: 一般法律原則（一）：比例原則與平等原則 核心觀念第 45 講",
+    "title": "Slide 144: Module 3: 一般法律原則（一）：比例原則與平等原則 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -2973,7 +2973,7 @@ window.slidesData = [
     "module": "Module 3: 一般法律原則（一）：比例原則與平等原則",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 145: Module 3: 一般法律原則（一）：比例原則與平等原則 核心觀念第 46 講",
+    "title": "Slide 145: Module 3: 一般法律原則（一）：比例原則與平等原則 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -3032,7 +3032,7 @@ window.slidesData = [
     "module": "Module 3: 一般法律原則（一）：比例原則與平等原則",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 148: Module 3: 一般法律原則（一）：比例原則與平等原則 核心觀念第 49 講",
+    "title": "Slide 148: Module 3: 一般法律原則（一）：比例原則與平等原則 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -3096,7 +3096,7 @@ window.slidesData = [
     "module": "Module 4: 一般法律原則（二）：信賴保護、誠信與裁量控制",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 151: Module 4: 一般法律原則（二）：信賴保護、誠信與裁量控制 核心觀念第 2 講",
+    "title": "Slide 151: Module 4: 一般法律原則（二）：信賴保護、誠信與裁量控制 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -3155,7 +3155,7 @@ window.slidesData = [
     "module": "Module 4: 一般法律原則（二）：信賴保護、誠信與裁量控制",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 154: Module 4: 一般法律原則（二）：信賴保護、誠信與裁量控制 核心觀念第 5 講",
+    "title": "Slide 154: Module 4: 一般法律原則（二）：信賴保護、誠信與裁量控制 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -3179,7 +3179,7 @@ window.slidesData = [
     "module": "Module 4: 一般法律原則（二）：信賴保護、誠信與裁量控制",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 155: Module 4: 一般法律原則（二）：信賴保護、誠信與裁量控制 核心觀念第 6 講",
+    "title": "Slide 155: Module 4: 一般法律原則（二）：信賴保護、誠信與裁量控制 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -3238,7 +3238,7 @@ window.slidesData = [
     "module": "Module 4: 一般法律原則（二）：信賴保護、誠信與裁量控制",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 158: Module 4: 一般法律原則（二）：信賴保護、誠信與裁量控制 核心觀念第 9 講",
+    "title": "Slide 158: Module 4: 一般法律原則（二）：信賴保護、誠信與裁量控制 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -3262,7 +3262,7 @@ window.slidesData = [
     "module": "Module 4: 一般法律原則（二）：信賴保護、誠信與裁量控制",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 159: Module 4: 一般法律原則（二）：信賴保護、誠信與裁量控制 核心觀念第 10 講",
+    "title": "Slide 159: Module 4: 一般法律原則（二）：信賴保護、誠信與裁量控制 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -3321,7 +3321,7 @@ window.slidesData = [
     "module": "Module 4: 一般法律原則（二）：信賴保護、誠信與裁量控制",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 162: Module 4: 一般法律原則（二）：信賴保護、誠信與裁量控制 核心觀念第 13 講",
+    "title": "Slide 162: Module 4: 一般法律原則（二）：信賴保護、誠信與裁量控制 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -3345,7 +3345,7 @@ window.slidesData = [
     "module": "Module 4: 一般法律原則（二）：信賴保護、誠信與裁量控制",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 163: Module 4: 一般法律原則（二）：信賴保護、誠信與裁量控制 核心觀念第 14 講",
+    "title": "Slide 163: Module 4: 一般法律原則（二）：信賴保護、誠信與裁量控制 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -3435,7 +3435,7 @@ window.slidesData = [
     "module": "Module 4: 一般法律原則（二）：信賴保護、誠信與裁量控制",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 167: Module 4: 一般法律原則（二）：信賴保護、誠信與裁量控制 核心觀念第 18 講",
+    "title": "Slide 167: Module 4: 一般法律原則（二）：信賴保護、誠信與裁量控制 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -3491,7 +3491,7 @@ window.slidesData = [
     "module": "Module 4: 一般法律原則（二）：信賴保護、誠信與裁量控制",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 170: Module 4: 一般法律原則（二）：信賴保護、誠信與裁量控制 核心觀念第 21 講",
+    "title": "Slide 170: Module 4: 一般法律原則（二）：信賴保護、誠信與裁量控制 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -3567,7 +3567,7 @@ window.slidesData = [
     "module": "Module 4: 一般法律原則（二）：信賴保護、誠信與裁量控制",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 174: Module 4: 一般法律原則（二）：信賴保護、誠信與裁量控制 核心觀念第 25 講",
+    "title": "Slide 174: Module 4: 一般法律原則（二）：信賴保護、誠信與裁量控制 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -3591,7 +3591,7 @@ window.slidesData = [
     "module": "Module 4: 一般法律原則（二）：信賴保護、誠信與裁量控制",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 175: Module 4: 一般法律原則（二）：信賴保護、誠信與裁量控制 核心觀念第 26 講",
+    "title": "Slide 175: Module 4: 一般法律原則（二）：信賴保護、誠信與裁量控制 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -3663,7 +3663,7 @@ window.slidesData = [
     "module": "Module 4: 一般法律原則（二）：信賴保護、誠信與裁量控制",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 178: Module 4: 一般法律原則（二）：信賴保護、誠信與裁量控制 核心觀念第 29 講",
+    "title": "Slide 178: Module 4: 一般法律原則（二）：信賴保護、誠信與裁量控制 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -3737,7 +3737,7 @@ window.slidesData = [
     "module": "Module 4: 一般法律原則（二）：信賴保護、誠信與裁量控制",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 182: Module 4: 一般法律原則（二）：信賴保護、誠信與裁量控制 核心觀念第 33 講",
+    "title": "Slide 182: Module 4: 一般法律原則（二）：信賴保護、誠信與裁量控制 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -3761,7 +3761,7 @@ window.slidesData = [
     "module": "Module 4: 一般法律原則（二）：信賴保護、誠信與裁量控制",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 183: Module 4: 一般法律原則（二）：信賴保護、誠信與裁量控制 核心觀念第 34 講",
+    "title": "Slide 183: Module 4: 一般法律原則（二）：信賴保護、誠信與裁量控制 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -3851,7 +3851,7 @@ window.slidesData = [
     "module": "Module 4: 一般法律原則（二）：信賴保護、誠信與裁量控制",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 187: Module 4: 一般法律原則（二）：信賴保護、誠信與裁量控制 核心觀念第 38 講",
+    "title": "Slide 187: Module 4: 一般法律原則（二）：信賴保護、誠信與裁量控制 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -3907,7 +3907,7 @@ window.slidesData = [
     "module": "Module 4: 一般法律原則（二）：信賴保護、誠信與裁量控制",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 190: Module 4: 一般法律原則（二）：信賴保護、誠信與裁量控制 核心觀念第 41 講",
+    "title": "Slide 190: Module 4: 一般法律原則（二）：信賴保護、誠信與裁量控制 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -3983,7 +3983,7 @@ window.slidesData = [
     "module": "Module 4: 一般法律原則（二）：信賴保護、誠信與裁量控制",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 194: Module 4: 一般法律原則（二）：信賴保護、誠信與裁量控制 核心觀念第 45 講",
+    "title": "Slide 194: Module 4: 一般法律原則（二）：信賴保護、誠信與裁量控制 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -4007,7 +4007,7 @@ window.slidesData = [
     "module": "Module 4: 一般法律原則（二）：信賴保護、誠信與裁量控制",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 195: Module 4: 一般法律原則（二）：信賴保護、誠信與裁量控制 核心觀念第 46 講",
+    "title": "Slide 195: Module 4: 一般法律原則（二）：信賴保護、誠信與裁量控制 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -4066,7 +4066,7 @@ window.slidesData = [
     "module": "Module 4: 一般法律原則（二）：信賴保護、誠信與裁量控制",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 198: Module 4: 一般法律原則（二）：信賴保護、誠信與裁量控制 核心觀念第 49 講",
+    "title": "Slide 198: Module 4: 一般法律原則（二）：信賴保護、誠信與裁量控制 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -4130,7 +4130,7 @@ window.slidesData = [
     "module": "Module 5: 行政行為態樣（一）：行政處分全解與實務案例",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 201: Module 5: 行政行為態樣（一）：行政處分全解與實務案例 核心觀念第 2 講",
+    "title": "Slide 201: Module 5: 行政行為態樣（一）：行政處分全解與實務案例 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -4189,7 +4189,7 @@ window.slidesData = [
     "module": "Module 5: 行政行為態樣（一）：行政處分全解與實務案例",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 204: Module 5: 行政行為態樣（一）：行政處分全解與實務案例 核心觀念第 5 講",
+    "title": "Slide 204: Module 5: 行政行為態樣（一）：行政處分全解與實務案例 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -4213,7 +4213,7 @@ window.slidesData = [
     "module": "Module 5: 行政行為態樣（一）：行政處分全解與實務案例",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 205: Module 5: 行政行為態樣（一）：行政處分全解與實務案例 核心觀念第 6 講",
+    "title": "Slide 205: Module 5: 行政行為態樣（一）：行政處分全解與實務案例 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -4272,7 +4272,7 @@ window.slidesData = [
     "module": "Module 5: 行政行為態樣（一）：行政處分全解與實務案例",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 208: Module 5: 行政行為態樣（一）：行政處分全解與實務案例 核心觀念第 9 講",
+    "title": "Slide 208: Module 5: 行政行為態樣（一）：行政處分全解與實務案例 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -4296,7 +4296,7 @@ window.slidesData = [
     "module": "Module 5: 行政行為態樣（一）：行政處分全解與實務案例",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 209: Module 5: 行政行為態樣（一）：行政處分全解與實務案例 核心觀念第 10 講",
+    "title": "Slide 209: Module 5: 行政行為態樣（一）：行政處分全解與實務案例 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -4355,7 +4355,7 @@ window.slidesData = [
     "module": "Module 5: 行政行為態樣（一）：行政處分全解與實務案例",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 212: Module 5: 行政行為態樣（一）：行政處分全解與實務案例 核心觀念第 13 講",
+    "title": "Slide 212: Module 5: 行政行為態樣（一）：行政處分全解與實務案例 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -4379,7 +4379,7 @@ window.slidesData = [
     "module": "Module 5: 行政行為態樣（一）：行政處分全解與實務案例",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 213: Module 5: 行政行為態樣（一）：行政處分全解與實務案例 核心觀念第 14 講",
+    "title": "Slide 213: Module 5: 行政行為態樣（一）：行政處分全解與實務案例 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -4469,7 +4469,7 @@ window.slidesData = [
     "module": "Module 5: 行政行為態樣（一）：行政處分全解與實務案例",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 217: Module 5: 行政行為態樣（一）：行政處分全解與實務案例 核心觀念第 18 講",
+    "title": "Slide 217: Module 5: 行政行為態樣（一）：行政處分全解與實務案例 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -4525,7 +4525,7 @@ window.slidesData = [
     "module": "Module 5: 行政行為態樣（一）：行政處分全解與實務案例",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 220: Module 5: 行政行為態樣（一）：行政處分全解與實務案例 核心觀念第 21 講",
+    "title": "Slide 220: Module 5: 行政行為態樣（一）：行政處分全解與實務案例 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -4601,7 +4601,7 @@ window.slidesData = [
     "module": "Module 5: 行政行為態樣（一）：行政處分全解與實務案例",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 224: Module 5: 行政行為態樣（一）：行政處分全解與實務案例 核心觀念第 25 講",
+    "title": "Slide 224: Module 5: 行政行為態樣（一）：行政處分全解與實務案例 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -4625,7 +4625,7 @@ window.slidesData = [
     "module": "Module 5: 行政行為態樣（一）：行政處分全解與實務案例",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 225: Module 5: 行政行為態樣（一）：行政處分全解與實務案例 核心觀念第 26 講",
+    "title": "Slide 225: Module 5: 行政行為態樣（一）：行政處分全解與實務案例 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -4697,7 +4697,7 @@ window.slidesData = [
     "module": "Module 5: 行政行為態樣（一）：行政處分全解與實務案例",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 228: Module 5: 行政行為態樣（一）：行政處分全解與實務案例 核心觀念第 29 講",
+    "title": "Slide 228: Module 5: 行政行為態樣（一）：行政處分全解與實務案例 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -4771,7 +4771,7 @@ window.slidesData = [
     "module": "Module 5: 行政行為態樣（一）：行政處分全解與實務案例",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 232: Module 5: 行政行為態樣（一）：行政處分全解與實務案例 核心觀念第 33 講",
+    "title": "Slide 232: Module 5: 行政行為態樣（一）：行政處分全解與實務案例 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -4795,7 +4795,7 @@ window.slidesData = [
     "module": "Module 5: 行政行為態樣（一）：行政處分全解與實務案例",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 233: Module 5: 行政行為態樣（一）：行政處分全解與實務案例 核心觀念第 34 講",
+    "title": "Slide 233: Module 5: 行政行為態樣（一）：行政處分全解與實務案例 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -4885,7 +4885,7 @@ window.slidesData = [
     "module": "Module 5: 行政行為態樣（一）：行政處分全解與實務案例",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 237: Module 5: 行政行為態樣（一）：行政處分全解與實務案例 核心觀念第 38 講",
+    "title": "Slide 237: Module 5: 行政行為態樣（一）：行政處分全解與實務案例 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -4941,7 +4941,7 @@ window.slidesData = [
     "module": "Module 5: 行政行為態樣（一）：行政處分全解與實務案例",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 240: Module 5: 行政行為態樣（一）：行政處分全解與實務案例 核心觀念第 41 講",
+    "title": "Slide 240: Module 5: 行政行為態樣（一）：行政處分全解與實務案例 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -5017,7 +5017,7 @@ window.slidesData = [
     "module": "Module 5: 行政行為態樣（一）：行政處分全解與實務案例",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 244: Module 5: 行政行為態樣（一）：行政處分全解與實務案例 核心觀念第 45 講",
+    "title": "Slide 244: Module 5: 行政行為態樣（一）：行政處分全解與實務案例 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -5041,7 +5041,7 @@ window.slidesData = [
     "module": "Module 5: 行政行為態樣（一）：行政處分全解與實務案例",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 245: Module 5: 行政行為態樣（一）：行政處分全解與實務案例 核心觀念第 46 講",
+    "title": "Slide 245: Module 5: 行政行為態樣（一）：行政處分全解與實務案例 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -5100,7 +5100,7 @@ window.slidesData = [
     "module": "Module 5: 行政行為態樣（一）：行政處分全解與實務案例",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 248: Module 5: 行政行為態樣（一）：行政處分全解與實務案例 核心觀念第 49 講",
+    "title": "Slide 248: Module 5: 行政行為態樣（一）：行政處分全解與實務案例 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -5164,7 +5164,7 @@ window.slidesData = [
     "module": "Module 6: 行政行為態樣（二）：行政契約、事實行為、指導與行政立法",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 251: Module 6: 行政行為態樣（二）：行政契約、事實行為、指導與行政立法 核心觀念第 2 講",
+    "title": "Slide 251: Module 6: 行政行為態樣（二）：行政契約、事實行為、指導與行政立法 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -5223,7 +5223,7 @@ window.slidesData = [
     "module": "Module 6: 行政行為態樣（二）：行政契約、事實行為、指導與行政立法",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 254: Module 6: 行政行為態樣（二）：行政契約、事實行為、指導與行政立法 核心觀念第 5 講",
+    "title": "Slide 254: Module 6: 行政行為態樣（二）：行政契約、事實行為、指導與行政立法 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -5247,7 +5247,7 @@ window.slidesData = [
     "module": "Module 6: 行政行為態樣（二）：行政契約、事實行為、指導與行政立法",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 255: Module 6: 行政行為態樣（二）：行政契約、事實行為、指導與行政立法 核心觀念第 6 講",
+    "title": "Slide 255: Module 6: 行政行為態樣（二）：行政契約、事實行為、指導與行政立法 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -5306,7 +5306,7 @@ window.slidesData = [
     "module": "Module 6: 行政行為態樣（二）：行政契約、事實行為、指導與行政立法",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 258: Module 6: 行政行為態樣（二）：行政契約、事實行為、指導與行政立法 核心觀念第 9 講",
+    "title": "Slide 258: Module 6: 行政行為態樣（二）：行政契約、事實行為、指導與行政立法 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -5330,7 +5330,7 @@ window.slidesData = [
     "module": "Module 6: 行政行為態樣（二）：行政契約、事實行為、指導與行政立法",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 259: Module 6: 行政行為態樣（二）：行政契約、事實行為、指導與行政立法 核心觀念第 10 講",
+    "title": "Slide 259: Module 6: 行政行為態樣（二）：行政契約、事實行為、指導與行政立法 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -5389,7 +5389,7 @@ window.slidesData = [
     "module": "Module 6: 行政行為態樣（二）：行政契約、事實行為、指導與行政立法",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 262: Module 6: 行政行為態樣（二）：行政契約、事實行為、指導與行政立法 核心觀念第 13 講",
+    "title": "Slide 262: Module 6: 行政行為態樣（二）：行政契約、事實行為、指導與行政立法 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -5413,7 +5413,7 @@ window.slidesData = [
     "module": "Module 6: 行政行為態樣（二）：行政契約、事實行為、指導與行政立法",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 263: Module 6: 行政行為態樣（二）：行政契約、事實行為、指導與行政立法 核心觀念第 14 講",
+    "title": "Slide 263: Module 6: 行政行為態樣（二）：行政契約、事實行為、指導與行政立法 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -5503,7 +5503,7 @@ window.slidesData = [
     "module": "Module 6: 行政行為態樣（二）：行政契約、事實行為、指導與行政立法",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 267: Module 6: 行政行為態樣（二）：行政契約、事實行為、指導與行政立法 核心觀念第 18 講",
+    "title": "Slide 267: Module 6: 行政行為態樣（二）：行政契約、事實行為、指導與行政立法 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -5559,7 +5559,7 @@ window.slidesData = [
     "module": "Module 6: 行政行為態樣（二）：行政契約、事實行為、指導與行政立法",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 270: Module 6: 行政行為態樣（二）：行政契約、事實行為、指導與行政立法 核心觀念第 21 講",
+    "title": "Slide 270: Module 6: 行政行為態樣（二）：行政契約、事實行為、指導與行政立法 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -5635,7 +5635,7 @@ window.slidesData = [
     "module": "Module 6: 行政行為態樣（二）：行政契約、事實行為、指導與行政立法",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 274: Module 6: 行政行為態樣（二）：行政契約、事實行為、指導與行政立法 核心觀念第 25 講",
+    "title": "Slide 274: Module 6: 行政行為態樣（二）：行政契約、事實行為、指導與行政立法 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -5659,7 +5659,7 @@ window.slidesData = [
     "module": "Module 6: 行政行為態樣（二）：行政契約、事實行為、指導與行政立法",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 275: Module 6: 行政行為態樣（二）：行政契約、事實行為、指導與行政立法 核心觀念第 26 講",
+    "title": "Slide 275: Module 6: 行政行為態樣（二）：行政契約、事實行為、指導與行政立法 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -5731,7 +5731,7 @@ window.slidesData = [
     "module": "Module 6: 行政行為態樣（二）：行政契約、事實行為、指導與行政立法",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 278: Module 6: 行政行為態樣（二）：行政契約、事實行為、指導與行政立法 核心觀念第 29 講",
+    "title": "Slide 278: Module 6: 行政行為態樣（二）：行政契約、事實行為、指導與行政立法 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -5805,7 +5805,7 @@ window.slidesData = [
     "module": "Module 6: 行政行為態樣（二）：行政契約、事實行為、指導與行政立法",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 282: Module 6: 行政行為態樣（二）：行政契約、事實行為、指導與行政立法 核心觀念第 33 講",
+    "title": "Slide 282: Module 6: 行政行為態樣（二）：行政契約、事實行為、指導與行政立法 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -5829,7 +5829,7 @@ window.slidesData = [
     "module": "Module 6: 行政行為態樣（二）：行政契約、事實行為、指導與行政立法",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 283: Module 6: 行政行為態樣（二）：行政契約、事實行為、指導與行政立法 核心觀念第 34 講",
+    "title": "Slide 283: Module 6: 行政行為態樣（二）：行政契約、事實行為、指導與行政立法 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -5919,7 +5919,7 @@ window.slidesData = [
     "module": "Module 6: 行政行為態樣（二）：行政契約、事實行為、指導與行政立法",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 287: Module 6: 行政行為態樣（二）：行政契約、事實行為、指導與行政立法 核心觀念第 38 講",
+    "title": "Slide 287: Module 6: 行政行為態樣（二）：行政契約、事實行為、指導與行政立法 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -5975,7 +5975,7 @@ window.slidesData = [
     "module": "Module 6: 行政行為態樣（二）：行政契約、事實行為、指導與行政立法",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 290: Module 6: 行政行為態樣（二）：行政契約、事實行為、指導與行政立法 核心觀念第 41 講",
+    "title": "Slide 290: Module 6: 行政行為態樣（二）：行政契約、事實行為、指導與行政立法 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -6051,7 +6051,7 @@ window.slidesData = [
     "module": "Module 6: 行政行為態樣（二）：行政契約、事實行為、指導與行政立法",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 294: Module 6: 行政行為態樣（二）：行政契約、事實行為、指導與行政立法 核心觀念第 45 講",
+    "title": "Slide 294: Module 6: 行政行為態樣（二）：行政契約、事實行為、指導與行政立法 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -6075,7 +6075,7 @@ window.slidesData = [
     "module": "Module 6: 行政行為態樣（二）：行政契約、事實行為、指導與行政立法",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 295: Module 6: 行政行為態樣（二）：行政契約、事實行為、指導與行政立法 核心觀念第 46 講",
+    "title": "Slide 295: Module 6: 行政行為態樣（二）：行政契約、事實行為、指導與行政立法 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -6134,7 +6134,7 @@ window.slidesData = [
     "module": "Module 6: 行政行為態樣（二）：行政契約、事實行為、指導與行政立法",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 298: Module 6: 行政行為態樣（二）：行政契約、事實行為、指導與行政立法 核心觀念第 49 講",
+    "title": "Slide 298: Module 6: 行政行為態樣（二）：行政契約、事實行為、指導與行政立法 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -6198,7 +6198,7 @@ window.slidesData = [
     "module": "Module 7: 行政制裁：行政罰法原理與新聞真實裁罰",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 301: Module 7: 行政制裁：行政罰法原理與新聞真實裁罰 核心觀念第 2 講",
+    "title": "Slide 301: Module 7: 行政制裁：行政罰法原理與新聞真實裁罰 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -6257,7 +6257,7 @@ window.slidesData = [
     "module": "Module 7: 行政制裁：行政罰法原理與新聞真實裁罰",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 304: Module 7: 行政制裁：行政罰法原理與新聞真實裁罰 核心觀念第 5 講",
+    "title": "Slide 304: Module 7: 行政制裁：行政罰法原理與新聞真實裁罰 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -6281,7 +6281,7 @@ window.slidesData = [
     "module": "Module 7: 行政制裁：行政罰法原理與新聞真實裁罰",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 305: Module 7: 行政制裁：行政罰法原理與新聞真實裁罰 核心觀念第 6 講",
+    "title": "Slide 305: Module 7: 行政制裁：行政罰法原理與新聞真實裁罰 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -6340,7 +6340,7 @@ window.slidesData = [
     "module": "Module 7: 行政制裁：行政罰法原理與新聞真實裁罰",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 308: Module 7: 行政制裁：行政罰法原理與新聞真實裁罰 核心觀念第 9 講",
+    "title": "Slide 308: Module 7: 行政制裁：行政罰法原理與新聞真實裁罰 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -6364,7 +6364,7 @@ window.slidesData = [
     "module": "Module 7: 行政制裁：行政罰法原理與新聞真實裁罰",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 309: Module 7: 行政制裁：行政罰法原理與新聞真實裁罰 核心觀念第 10 講",
+    "title": "Slide 309: Module 7: 行政制裁：行政罰法原理與新聞真實裁罰 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -6423,7 +6423,7 @@ window.slidesData = [
     "module": "Module 7: 行政制裁：行政罰法原理與新聞真實裁罰",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 312: Module 7: 行政制裁：行政罰法原理與新聞真實裁罰 核心觀念第 13 講",
+    "title": "Slide 312: Module 7: 行政制裁：行政罰法原理與新聞真實裁罰 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -6447,7 +6447,7 @@ window.slidesData = [
     "module": "Module 7: 行政制裁：行政罰法原理與新聞真實裁罰",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 313: Module 7: 行政制裁：行政罰法原理與新聞真實裁罰 核心觀念第 14 講",
+    "title": "Slide 313: Module 7: 行政制裁：行政罰法原理與新聞真實裁罰 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -6537,7 +6537,7 @@ window.slidesData = [
     "module": "Module 7: 行政制裁：行政罰法原理與新聞真實裁罰",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 317: Module 7: 行政制裁：行政罰法原理與新聞真實裁罰 核心觀念第 18 講",
+    "title": "Slide 317: Module 7: 行政制裁：行政罰法原理與新聞真實裁罰 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -6593,7 +6593,7 @@ window.slidesData = [
     "module": "Module 7: 行政制裁：行政罰法原理與新聞真實裁罰",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 320: Module 7: 行政制裁：行政罰法原理與新聞真實裁罰 核心觀念第 21 講",
+    "title": "Slide 320: Module 7: 行政制裁：行政罰法原理與新聞真實裁罰 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -6669,7 +6669,7 @@ window.slidesData = [
     "module": "Module 7: 行政制裁：行政罰法原理與新聞真實裁罰",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 324: Module 7: 行政制裁：行政罰法原理與新聞真實裁罰 核心觀念第 25 講",
+    "title": "Slide 324: Module 7: 行政制裁：行政罰法原理與新聞真實裁罰 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -6693,7 +6693,7 @@ window.slidesData = [
     "module": "Module 7: 行政制裁：行政罰法原理與新聞真實裁罰",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 325: Module 7: 行政制裁：行政罰法原理與新聞真實裁罰 核心觀念第 26 講",
+    "title": "Slide 325: Module 7: 行政制裁：行政罰法原理與新聞真實裁罰 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -6765,7 +6765,7 @@ window.slidesData = [
     "module": "Module 7: 行政制裁：行政罰法原理與新聞真實裁罰",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 328: Module 7: 行政制裁：行政罰法原理與新聞真實裁罰 核心觀念第 29 講",
+    "title": "Slide 328: Module 7: 行政制裁：行政罰法原理與新聞真實裁罰 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -6839,7 +6839,7 @@ window.slidesData = [
     "module": "Module 7: 行政制裁：行政罰法原理與新聞真實裁罰",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 332: Module 7: 行政制裁：行政罰法原理與新聞真實裁罰 核心觀念第 33 講",
+    "title": "Slide 332: Module 7: 行政制裁：行政罰法原理與新聞真實裁罰 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -6863,7 +6863,7 @@ window.slidesData = [
     "module": "Module 7: 行政制裁：行政罰法原理與新聞真實裁罰",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 333: Module 7: 行政制裁：行政罰法原理與新聞真實裁罰 核心觀念第 34 講",
+    "title": "Slide 333: Module 7: 行政制裁：行政罰法原理與新聞真實裁罰 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -6953,7 +6953,7 @@ window.slidesData = [
     "module": "Module 7: 行政制裁：行政罰法原理與新聞真實裁罰",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 337: Module 7: 行政制裁：行政罰法原理與新聞真實裁罰 核心觀念第 38 講",
+    "title": "Slide 337: Module 7: 行政制裁：行政罰法原理與新聞真實裁罰 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -7009,7 +7009,7 @@ window.slidesData = [
     "module": "Module 7: 行政制裁：行政罰法原理與新聞真實裁罰",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 340: Module 7: 行政制裁：行政罰法原理與新聞真實裁罰 核心觀念第 41 講",
+    "title": "Slide 340: Module 7: 行政制裁：行政罰法原理與新聞真實裁罰 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -7085,7 +7085,7 @@ window.slidesData = [
     "module": "Module 7: 行政制裁：行政罰法原理與新聞真實裁罰",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 344: Module 7: 行政制裁：行政罰法原理與新聞真實裁罰 核心觀念第 45 講",
+    "title": "Slide 344: Module 7: 行政制裁：行政罰法原理與新聞真實裁罰 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -7109,7 +7109,7 @@ window.slidesData = [
     "module": "Module 7: 行政制裁：行政罰法原理與新聞真實裁罰",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 345: Module 7: 行政制裁：行政罰法原理與新聞真實裁罰 核心觀念第 46 講",
+    "title": "Slide 345: Module 7: 行政制裁：行政罰法原理與新聞真實裁罰 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -7168,7 +7168,7 @@ window.slidesData = [
     "module": "Module 7: 行政制裁：行政罰法原理與新聞真實裁罰",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 348: Module 7: 行政制裁：行政罰法原理與新聞真實裁罰 核心觀念第 49 講",
+    "title": "Slide 348: Module 7: 行政制裁：行政罰法原理與新聞真實裁罰 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -7232,7 +7232,7 @@ window.slidesData = [
     "module": "Module 8: 行政執行法與即時強制",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 351: Module 8: 行政執行法與即時強制 核心觀念第 2 講",
+    "title": "Slide 351: Module 8: 行政執行法與即時強制 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -7291,7 +7291,7 @@ window.slidesData = [
     "module": "Module 8: 行政執行法與即時強制",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 354: Module 8: 行政執行法與即時強制 核心觀念第 5 講",
+    "title": "Slide 354: Module 8: 行政執行法與即時強制 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -7315,7 +7315,7 @@ window.slidesData = [
     "module": "Module 8: 行政執行法與即時強制",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 355: Module 8: 行政執行法與即時強制 核心觀念第 6 講",
+    "title": "Slide 355: Module 8: 行政執行法與即時強制 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -7374,7 +7374,7 @@ window.slidesData = [
     "module": "Module 8: 行政執行法與即時強制",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 358: Module 8: 行政執行法與即時強制 核心觀念第 9 講",
+    "title": "Slide 358: Module 8: 行政執行法與即時強制 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -7398,7 +7398,7 @@ window.slidesData = [
     "module": "Module 8: 行政執行法與即時強制",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 359: Module 8: 行政執行法與即時強制 核心觀念第 10 講",
+    "title": "Slide 359: Module 8: 行政執行法與即時強制 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -7457,7 +7457,7 @@ window.slidesData = [
     "module": "Module 8: 行政執行法與即時強制",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 362: Module 8: 行政執行法與即時強制 核心觀念第 13 講",
+    "title": "Slide 362: Module 8: 行政執行法與即時強制 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -7481,7 +7481,7 @@ window.slidesData = [
     "module": "Module 8: 行政執行法與即時強制",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 363: Module 8: 行政執行法與即時強制 核心觀念第 14 講",
+    "title": "Slide 363: Module 8: 行政執行法與即時強制 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -7571,7 +7571,7 @@ window.slidesData = [
     "module": "Module 8: 行政執行法與即時強制",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 367: Module 8: 行政執行法與即時強制 核心觀念第 18 講",
+    "title": "Slide 367: Module 8: 行政執行法與即時強制 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -7627,7 +7627,7 @@ window.slidesData = [
     "module": "Module 8: 行政執行法與即時強制",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 370: Module 8: 行政執行法與即時強制 核心觀念第 21 講",
+    "title": "Slide 370: Module 8: 行政執行法與即時強制 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -7703,7 +7703,7 @@ window.slidesData = [
     "module": "Module 8: 行政執行法與即時強制",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 374: Module 8: 行政執行法與即時強制 核心觀念第 25 講",
+    "title": "Slide 374: Module 8: 行政執行法與即時強制 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -7727,7 +7727,7 @@ window.slidesData = [
     "module": "Module 8: 行政執行法與即時強制",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 375: Module 8: 行政執行法與即時強制 核心觀念第 26 講",
+    "title": "Slide 375: Module 8: 行政執行法與即時強制 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -7799,7 +7799,7 @@ window.slidesData = [
     "module": "Module 8: 行政執行法與即時強制",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 378: Module 8: 行政執行法與即時強制 核心觀念第 29 講",
+    "title": "Slide 378: Module 8: 行政執行法與即時強制 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -7873,7 +7873,7 @@ window.slidesData = [
     "module": "Module 8: 行政執行法與即時強制",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 382: Module 8: 行政執行法與即時強制 核心觀念第 33 講",
+    "title": "Slide 382: Module 8: 行政執行法與即時強制 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -7897,7 +7897,7 @@ window.slidesData = [
     "module": "Module 8: 行政執行法與即時強制",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 383: Module 8: 行政執行法與即時強制 核心觀念第 34 講",
+    "title": "Slide 383: Module 8: 行政執行法與即時強制 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -7987,7 +7987,7 @@ window.slidesData = [
     "module": "Module 8: 行政執行法與即時強制",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 387: Module 8: 行政執行法與即時強制 核心觀念第 38 講",
+    "title": "Slide 387: Module 8: 行政執行法與即時強制 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -8043,7 +8043,7 @@ window.slidesData = [
     "module": "Module 8: 行政執行法與即時強制",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 390: Module 8: 行政執行法與即時強制 核心觀念第 41 講",
+    "title": "Slide 390: Module 8: 行政執行法與即時強制 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -8119,7 +8119,7 @@ window.slidesData = [
     "module": "Module 8: 行政執行法與即時強制",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 394: Module 8: 行政執行法與即時強制 核心觀念第 45 講",
+    "title": "Slide 394: Module 8: 行政執行法與即時強制 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -8143,7 +8143,7 @@ window.slidesData = [
     "module": "Module 8: 行政執行法與即時強制",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 395: Module 8: 行政執行法與即時強制 核心觀念第 46 講",
+    "title": "Slide 395: Module 8: 行政執行法與即時強制 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -8202,7 +8202,7 @@ window.slidesData = [
     "module": "Module 8: 行政執行法與即時強制",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 398: Module 8: 行政執行法與即時強制 核心觀念第 49 講",
+    "title": "Slide 398: Module 8: 行政執行法與即時強制 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -8266,7 +8266,7 @@ window.slidesData = [
     "module": "Module 9: 行政救濟體系：訴願與行政訴訟三大類型",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 401: Module 9: 行政救濟體系：訴願與行政訴訟三大類型 核心觀念第 2 講",
+    "title": "Slide 401: Module 9: 行政救濟體系：訴願與行政訴訟三大類型 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -8325,7 +8325,7 @@ window.slidesData = [
     "module": "Module 9: 行政救濟體系：訴願與行政訴訟三大類型",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 404: Module 9: 行政救濟體系：訴願與行政訴訟三大類型 核心觀念第 5 講",
+    "title": "Slide 404: Module 9: 行政救濟體系：訴願與行政訴訟三大類型 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -8349,7 +8349,7 @@ window.slidesData = [
     "module": "Module 9: 行政救濟體系：訴願與行政訴訟三大類型",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 405: Module 9: 行政救濟體系：訴願與行政訴訟三大類型 核心觀念第 6 講",
+    "title": "Slide 405: Module 9: 行政救濟體系：訴願與行政訴訟三大類型 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -8408,7 +8408,7 @@ window.slidesData = [
     "module": "Module 9: 行政救濟體系：訴願與行政訴訟三大類型",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 408: Module 9: 行政救濟體系：訴願與行政訴訟三大類型 核心觀念第 9 講",
+    "title": "Slide 408: Module 9: 行政救濟體系：訴願與行政訴訟三大類型 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -8432,7 +8432,7 @@ window.slidesData = [
     "module": "Module 9: 行政救濟體系：訴願與行政訴訟三大類型",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 409: Module 9: 行政救濟體系：訴願與行政訴訟三大類型 核心觀念第 10 講",
+    "title": "Slide 409: Module 9: 行政救濟體系：訴願與行政訴訟三大類型 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -8491,7 +8491,7 @@ window.slidesData = [
     "module": "Module 9: 行政救濟體系：訴願與行政訴訟三大類型",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 412: Module 9: 行政救濟體系：訴願與行政訴訟三大類型 核心觀念第 13 講",
+    "title": "Slide 412: Module 9: 行政救濟體系：訴願與行政訴訟三大類型 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -8515,7 +8515,7 @@ window.slidesData = [
     "module": "Module 9: 行政救濟體系：訴願與行政訴訟三大類型",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 413: Module 9: 行政救濟體系：訴願與行政訴訟三大類型 核心觀念第 14 講",
+    "title": "Slide 413: Module 9: 行政救濟體系：訴願與行政訴訟三大類型 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -8605,7 +8605,7 @@ window.slidesData = [
     "module": "Module 9: 行政救濟體系：訴願與行政訴訟三大類型",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 417: Module 9: 行政救濟體系：訴願與行政訴訟三大類型 核心觀念第 18 講",
+    "title": "Slide 417: Module 9: 行政救濟體系：訴願與行政訴訟三大類型 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -8661,7 +8661,7 @@ window.slidesData = [
     "module": "Module 9: 行政救濟體系：訴願與行政訴訟三大類型",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 420: Module 9: 行政救濟體系：訴願與行政訴訟三大類型 核心觀念第 21 講",
+    "title": "Slide 420: Module 9: 行政救濟體系：訴願與行政訴訟三大類型 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -8737,7 +8737,7 @@ window.slidesData = [
     "module": "Module 9: 行政救濟體系：訴願與行政訴訟三大類型",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 424: Module 9: 行政救濟體系：訴願與行政訴訟三大類型 核心觀念第 25 講",
+    "title": "Slide 424: Module 9: 行政救濟體系：訴願與行政訴訟三大類型 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -8761,7 +8761,7 @@ window.slidesData = [
     "module": "Module 9: 行政救濟體系：訴願與行政訴訟三大類型",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 425: Module 9: 行政救濟體系：訴願與行政訴訟三大類型 核心觀念第 26 講",
+    "title": "Slide 425: Module 9: 行政救濟體系：訴願與行政訴訟三大類型 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -8833,7 +8833,7 @@ window.slidesData = [
     "module": "Module 9: 行政救濟體系：訴願與行政訴訟三大類型",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 428: Module 9: 行政救濟體系：訴願與行政訴訟三大類型 核心觀念第 29 講",
+    "title": "Slide 428: Module 9: 行政救濟體系：訴願與行政訴訟三大類型 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -8907,7 +8907,7 @@ window.slidesData = [
     "module": "Module 9: 行政救濟體系：訴願與行政訴訟三大類型",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 432: Module 9: 行政救濟體系：訴願與行政訴訟三大類型 核心觀念第 33 講",
+    "title": "Slide 432: Module 9: 行政救濟體系：訴願與行政訴訟三大類型 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -8931,7 +8931,7 @@ window.slidesData = [
     "module": "Module 9: 行政救濟體系：訴願與行政訴訟三大類型",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 433: Module 9: 行政救濟體系：訴願與行政訴訟三大類型 核心觀念第 34 講",
+    "title": "Slide 433: Module 9: 行政救濟體系：訴願與行政訴訟三大類型 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -9021,7 +9021,7 @@ window.slidesData = [
     "module": "Module 9: 行政救濟體系：訴願與行政訴訟三大類型",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 437: Module 9: 行政救濟體系：訴願與行政訴訟三大類型 核心觀念第 38 講",
+    "title": "Slide 437: Module 9: 行政救濟體系：訴願與行政訴訟三大類型 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -9077,7 +9077,7 @@ window.slidesData = [
     "module": "Module 9: 行政救濟體系：訴願與行政訴訟三大類型",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 440: Module 9: 行政救濟體系：訴願與行政訴訟三大類型 核心觀念第 41 講",
+    "title": "Slide 440: Module 9: 行政救濟體系：訴願與行政訴訟三大類型 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -9153,7 +9153,7 @@ window.slidesData = [
     "module": "Module 9: 行政救濟體系：訴願與行政訴訟三大類型",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 444: Module 9: 行政救濟體系：訴願與行政訴訟三大類型 核心觀念第 45 講",
+    "title": "Slide 444: Module 9: 行政救濟體系：訴願與行政訴訟三大類型 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -9177,7 +9177,7 @@ window.slidesData = [
     "module": "Module 9: 行政救濟體系：訴願與行政訴訟三大類型",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 445: Module 9: 行政救濟體系：訴願與行政訴訟三大類型 核心觀念第 46 講",
+    "title": "Slide 445: Module 9: 行政救濟體系：訴願與行政訴訟三大類型 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -9236,7 +9236,7 @@ window.slidesData = [
     "module": "Module 9: 行政救濟體系：訴願與行政訴訟三大類型",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 448: Module 9: 行政救濟體系：訴願與行政訴訟三大類型 核心觀念第 49 講",
+    "title": "Slide 448: Module 9: 行政救濟體系：訴願與行政訴訟三大類型 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -9300,7 +9300,7 @@ window.slidesData = [
     "module": "Module 10: 國家責任全剖析與大型新聞綜合素養案例大會考",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 451: Module 10: 國家責任全剖析與大型新聞綜合素養案例大會考 核心觀念第 2 講",
+    "title": "Slide 451: Module 10: 國家責任全剖析與大型新聞綜合素養案例大會考 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -9359,7 +9359,7 @@ window.slidesData = [
     "module": "Module 10: 國家責任全剖析與大型新聞綜合素養案例大會考",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 454: Module 10: 國家責任全剖析與大型新聞綜合素養案例大會考 核心觀念第 5 講",
+    "title": "Slide 454: Module 10: 國家責任全剖析與大型新聞綜合素養案例大會考 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -9383,7 +9383,7 @@ window.slidesData = [
     "module": "Module 10: 國家責任全剖析與大型新聞綜合素養案例大會考",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 455: Module 10: 國家責任全剖析與大型新聞綜合素養案例大會考 核心觀念第 6 講",
+    "title": "Slide 455: Module 10: 國家責任全剖析與大型新聞綜合素養案例大會考 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -9442,7 +9442,7 @@ window.slidesData = [
     "module": "Module 10: 國家責任全剖析與大型新聞綜合素養案例大會考",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 458: Module 10: 國家責任全剖析與大型新聞綜合素養案例大會考 核心觀念第 9 講",
+    "title": "Slide 458: Module 10: 國家責任全剖析與大型新聞綜合素養案例大會考 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -9466,7 +9466,7 @@ window.slidesData = [
     "module": "Module 10: 國家責任全剖析與大型新聞綜合素養案例大會考",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 459: Module 10: 國家責任全剖析與大型新聞綜合素養案例大會考 核心觀念第 10 講",
+    "title": "Slide 459: Module 10: 國家責任全剖析與大型新聞綜合素養案例大會考 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -9525,7 +9525,7 @@ window.slidesData = [
     "module": "Module 10: 國家責任全剖析與大型新聞綜合素養案例大會考",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 462: Module 10: 國家責任全剖析與大型新聞綜合素養案例大會考 核心觀念第 13 講",
+    "title": "Slide 462: Module 10: 國家責任全剖析與大型新聞綜合素養案例大會考 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -9549,7 +9549,7 @@ window.slidesData = [
     "module": "Module 10: 國家責任全剖析與大型新聞綜合素養案例大會考",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 463: Module 10: 國家責任全剖析與大型新聞綜合素養案例大會考 核心觀念第 14 講",
+    "title": "Slide 463: Module 10: 國家責任全剖析與大型新聞綜合素養案例大會考 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -9639,7 +9639,7 @@ window.slidesData = [
     "module": "Module 10: 國家責任全剖析與大型新聞綜合素養案例大會考",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 467: Module 10: 國家責任全剖析與大型新聞綜合素養案例大會考 核心觀念第 18 講",
+    "title": "Slide 467: Module 10: 國家責任全剖析與大型新聞綜合素養案例大會考 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -9695,7 +9695,7 @@ window.slidesData = [
     "module": "Module 10: 國家責任全剖析與大型新聞綜合素養案例大會考",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 470: Module 10: 國家責任全剖析與大型新聞綜合素養案例大會考 核心觀念第 21 講",
+    "title": "Slide 470: Module 10: 國家責任全剖析與大型新聞綜合素養案例大會考 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -9771,7 +9771,7 @@ window.slidesData = [
     "module": "Module 10: 國家責任全剖析與大型新聞綜合素養案例大會考",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 474: Module 10: 國家責任全剖析與大型新聞綜合素養案例大會考 核心觀念第 25 講",
+    "title": "Slide 474: Module 10: 國家責任全剖析與大型新聞綜合素養案例大會考 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -9795,7 +9795,7 @@ window.slidesData = [
     "module": "Module 10: 國家責任全剖析與大型新聞綜合素養案例大會考",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 475: Module 10: 國家責任全剖析與大型新聞綜合素養案例大會考 核心觀念第 26 講",
+    "title": "Slide 475: Module 10: 國家責任全剖析與大型新聞綜合素養案例大會考 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -9867,7 +9867,7 @@ window.slidesData = [
     "module": "Module 10: 國家責任全剖析與大型新聞綜合素養案例大會考",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 478: Module 10: 國家責任全剖析與大型新聞綜合素養案例大會考 核心觀念第 29 講",
+    "title": "Slide 478: Module 10: 國家責任全剖析與大型新聞綜合素養案例大會考 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -9941,7 +9941,7 @@ window.slidesData = [
     "module": "Module 10: 國家責任全剖析與大型新聞綜合素養案例大會考",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 482: Module 10: 國家責任全剖析與大型新聞綜合素養案例大會考 核心觀念第 33 講",
+    "title": "Slide 482: Module 10: 國家責任全剖析與大型新聞綜合素養案例大會考 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -9965,7 +9965,7 @@ window.slidesData = [
     "module": "Module 10: 國家責任全剖析與大型新聞綜合素養案例大會考",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 483: Module 10: 國家責任全剖析與大型新聞綜合素養案例大會考 核心觀念第 34 講",
+    "title": "Slide 483: Module 10: 國家責任全剖析與大型新聞綜合素養案例大會考 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -10055,7 +10055,7 @@ window.slidesData = [
     "module": "Module 10: 國家責任全剖析與大型新聞綜合素養案例大會考",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 487: Module 10: 國家責任全剖析與大型新聞綜合素養案例大會考 核心觀念第 38 講",
+    "title": "Slide 487: Module 10: 國家責任全剖析與大型新聞綜合素養案例大會考 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -10111,7 +10111,7 @@ window.slidesData = [
     "module": "Module 10: 國家責任全剖析與大型新聞綜合素養案例大會考",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 490: Module 10: 國家責任全剖析與大型新聞綜合素養案例大會考 核心觀念第 41 講",
+    "title": "Slide 490: Module 10: 國家責任全剖析與大型新聞綜合素養案例大會考 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -10187,7 +10187,7 @@ window.slidesData = [
     "module": "Module 10: 國家責任全剖析與大型新聞綜合素養案例大會考",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 494: Module 10: 國家責任全剖析與大型新聞綜合素養案例大會考 核心觀念第 45 講",
+    "title": "Slide 494: Module 10: 國家責任全剖析與大型新聞綜合素養案例大會考 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -10211,7 +10211,7 @@ window.slidesData = [
     "module": "Module 10: 國家責任全剖析與大型新聞綜合素養案例大會考",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 495: Module 10: 國家責任全剖析與大型新聞綜合素養案例大會考 核心觀念第 46 講",
+    "title": "Slide 495: Module 10: 國家責任全剖析與大型新聞綜合素養案例大會考 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {
@@ -10270,7 +10270,7 @@ window.slidesData = [
     "module": "Module 10: 國家責任全剖析與大型新聞綜合素養案例大會考",
     "type": "concept",
     "category": "法理聚焦與重點梳理",
-    "title": "Slide 498: Module 10: 國家責任全剖析與大型新聞綜合素養案例大會考 核心觀念第 49 講",
+    "title": "Slide 498: Module 10: 國家責任全剖析與大型新聞綜合素養案例大會考 專題解析",
     "subtitle": "法治國核心法理與規範邏輯剖析",
     "cards": [
       {

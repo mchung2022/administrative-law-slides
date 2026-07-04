@@ -299,7 +299,7 @@ function generateConceptSlide(id, modTitle) {
         module: modTitle,
         type: "concept",
         category: "法理聚焦與重點梳理",
-        title: `Slide ${id}: ${modTitle} 核心觀念第 ${(id % 50) + 1} 講`,
+        title: `Slide ${id}: ${modTitle} 專題解析`,
         subtitle: "法治國核心法理與規範邏輯剖析",
         cards: [
             { title: "📌 規範核心", content: `深入探討 ${modTitle} 之法律條文要件與立法精神。` },
