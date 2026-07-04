@@ -235,12 +235,12 @@ function generateShortAnswerSlide(id, modTitle, index) {
 
 function generateNewsCaseSlide(id, modTitle) {
     const newsCases = [
-        { title: "公視新聞專題：疫情期間戴口罩處分與訴願爭議報導", content: "民眾因身體特殊狀況未戴口罩遭罰 3,000 元，經提出診斷證明提起訴願，主管機關審酌認定符合情節輕微撤銷原處分。", yid: "vJ2_t-6lE7g" },
-        { title: "TVBS新聞專題：酒駕刑事判刑與行政罰鍰併罰違憲爭議", content: "駕駛人因酒駕遭法院判處易科罰金確定後，交通裁決所重複開立 9 萬元罰單，經提起行政訴訟法院判決撤銷罰鍰處分。", yid: "R6XQfRj4yD0" },
-        { title: "東森新聞專題：法務部行政執行署查封欠稅大戶豪宅報導", content: "某知名企業家欠繳綜合所得稅 2 億元，行政執行署拍賣其名下豪宅並向法院申請管收及限制出境。", yid: "2h9W4K0_s98" },
-        { title: "華視新聞專題：騎士行經坑洞摔傷市府過失國家賠償案", content: "騎士因夜間行經坑洞人行道重摔骨折，法院判決市府養護工程處負擔 80 萬元國家賠償。", yid: "1Q_N_M7t_80" },
-        { title: "三立新聞專題：老字號工廠違規排放廢水勒令停工事件", content: "環保局接獲民眾檢舉稽查，發現工廠埋暗管排放重金屬廢水，依水污染防治法勒令停工並重罰 2,000 萬元。", yid: "0L0j2k_xX00" },
-        { title: "民視新聞專題：颱風土石流爆發前發布即時強制令撤離居民", content: "縣政府於土石流黃色警戒時發布即時強制令，警察與國軍強制將偏遠山區村民撤離至安全避難所。", yid: "j9m7w1X_yR0" }
+        { title: "公視新聞專題：疫情期間戴口罩處分與訴願爭議報導", content: "民眾因身體特殊狀況未戴口罩遭罰 3,000 元，經提出診斷證明提起訴願，主管機關審酌認定符合情節輕微撤銷原處分。" },
+        { title: "TVBS新聞專題：酒駕刑事判刑與行政罰鍰併罰違憲爭議", content: "駕駛人因酒駕遭法院判處易科罰金確定後，交通裁決所重複開立 9 萬元罰單，經提起行政訴訟法院判決撤銷罰鍰處分。" },
+        { title: "東森新聞專題：法務部行政執行署查封欠稅大戶豪宅報導", content: "某知名企業家欠繳綜合所得稅 2 億元，行政執行署拍賣其名下豪宅並向法院申請管收及限制出境。" },
+        { title: "華視新聞專題：騎士行經坑洞摔傷市府過失國家賠償案", content: "騎士因夜間行經坑洞人行道重摔骨折，法院判決市府養護工程處負擔 80 萬元國家賠償。" },
+        { title: "三立新聞專題：老字號工廠違規排放廢水勒令停工事件", content: "環保局接獲民眾檢舉稽查，發現工廠埋暗管排放重金屬廢水，依水污染防治法勒令停工並重罰 2,000 萬元。" },
+        { title: "民視新聞專題：颱風土石流爆發前發布即時強制令撤離居民", content: "縣政府於土石流黃色警戒時發布即時強制令，警察與國軍強制將偏遠山區村民撤離至安全避難所。" }
     ];
 
     const nc = newsCases[id % newsCases.length];
@@ -255,10 +255,6 @@ function generateNewsCaseSlide(id, modTitle) {
             title: `📰 新聞事件：${nc.title}`,
             content: nc.content
         },
-        video: {
-            title: `📰 臺灣新聞報導：${nc.title}`,
-            youtubeId: nc.yid
-        },
         bullets: [
             "<strong>法理剖析</strong>：檢視該臺灣新聞事件背後所涉及之行政法規要件與原則。",
             "<strong>公民權利思考</strong>：當人民面對類似行政處置時，如何依法維護自身權益？"
@@ -270,11 +266,11 @@ function generateNewsCaseSlide(id, modTitle) {
 
 function generatePrecedentSlide(id, modTitle) {
     const precedents = [
-        { title: "釋字第 443 號解釋", content: "劃分憲法保留、絕對法律保留、相對法律保留與非法律保留之層次化保留體系。", newsTitle: "公視新聞專題：從大法官釋字 443 號看政府防疫限制自由之法律保留界線", yid: "0L0j2k_xX00" },
-        { title: "釋字第 784 號解釋", content: "打破特別權力關係，學生權利受學校公權力措施侵害時，得依法提起申訴與行政訴訟。", newsTitle: "TVBS新聞專題：釋字 784 號打破特別權力關係 校園懲處救濟權利保障報導", yid: "9bZkp7q19f0" },
-        { title: "釋字第 522 號解釋", content: "法律授權行政機關訂定法規命令者，其授權之目的、內容及範圍應具體明確。", newsTitle: "東森新聞專題：授權明確性原則與行政處罰命令合憲性檢視新聞報導", yid: "vJ2_t-6lE7g" },
-        { title: "釋字第 576 號解釋", content: "契約自由為私法自治基石，惟公法上行為則需恪遵一般法律原則以防權力濫用。", newsTitle: "華視新聞專題：公法契約與私法自治之界線實務爭議專題新聞", yid: "3JZ_D3ELwOQ" },
-        { title: "憲判字第 8 號判決", content: "確認行政法院對公法上權利救濟之最終審判權，保障人民憲法訴訟權。", newsTitle: "民視新聞專題：憲法法庭判決保障人民訴訟權與行政救濟新紀元報導", yid: "1Q_N_M7t_80" }
+        { title: "釋字第 443 號解釋", content: "劃分憲法保留、絕對法律保留、相對法律保留與非法律保留之層次化保留體系。" },
+        { title: "釋字第 784 號解釋", content: "打破特別權力關係，學生權利受學校公權力措施侵害時，得依法提起申訴與行政訴訟。" },
+        { title: "釋字第 522 號解釋", content: "法律授權行政機關訂定法規命令者，其授權之目的、內容及範圍應具體明確。" },
+        { title: "釋字第 576 號解釋", content: "契約自由為私法自治基石，惟公法上行為則需恪遵一般法律原則以防權力濫用。" },
+        { title: "憲判字第 8 號判決", content: "確認行政法院對公法上權利救濟之最終審判權，保障人民憲法訴訟權。" }
     ];
 
     const p = precedents[id % precedents.length];
@@ -290,15 +286,11 @@ function generatePrecedentSlide(id, modTitle) {
             title: `⚖ ${p.title} 意旨`,
             content: p.content
         },
-        video: {
-            title: `📰 臺灣新聞專題報導：${p.newsTitle}`,
-            youtubeId: p.yid
-        },
         bullets: [
             "<strong>解釋背景</strong>：釐清違憲審查之爭議焦點與憲法價值。",
             "<strong>行政法影響</strong>：拘束全國各行政機關與法院，成為執法與裁判之金牌標準。"
         ],
-        notes: `本頁深入解析 ${p.title} 在 ${modTitle} 中的法理意義並提供臺灣新聞專題報導影片輔助解說。`
+        notes: `本頁深入解析 ${p.title} 在 ${modTitle} 中的法理意義。`
     };
 }
 
