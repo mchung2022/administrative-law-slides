@@ -22,9 +22,22 @@ document.addEventListener('DOMContentLoaded', () => {
     const btnHelp = document.getElementById('btn-help');
     const btnFullscreen = document.getElementById('btn-fullscreen');
 
+    const themeSelect = document.getElementById('theme-select');
     const animationSelect = document.getElementById('animation-select');
     const jumpInput = document.getElementById('jump-input');
     const btnJump = document.getElementById('btn-jump');
+
+    // Initialize Theme Switcher from localStorage
+    const savedTheme = localStorage.getItem('adminLawSlideTheme') || 'theme-dark';
+    document.body.className = savedTheme;
+    if (themeSelect) {
+        themeSelect.value = savedTheme;
+        themeSelect.addEventListener('change', (e) => {
+            const selectedTheme = e.target.value;
+            document.body.className = selectedTheme;
+            localStorage.setItem('adminLawSlideTheme', selectedTheme);
+        });
+    }
 
     const notesDrawer = document.getElementById('notes-drawer');
     const closeNotes = document.getElementById('close-notes');
