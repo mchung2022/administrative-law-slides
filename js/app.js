@@ -314,7 +314,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (slide.video) {
             contentHtml += `
                 <div class="video-box animate-item">
-                    <h4>🎥 影音法律講堂：${slide.video.title}</h4>
+                    <h4>📰 臺灣新聞報導專題：${slide.video.title}</h4>
                     <div class="video-responsive">
                         <iframe src="https://www.youtube.com/embed/${slide.video.youtubeId}?rel=0" 
                                 title="${slide.video.title}" 
