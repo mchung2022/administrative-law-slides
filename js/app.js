@@ -311,6 +311,22 @@ document.addEventListener('DOMContentLoaded', () => {
             `;
         }
 
+        if (slide.video) {
+            contentHtml += `
+                <div class="video-box animate-item">
+                    <h4>🎥 影音法律講堂：${slide.video.title}</h4>
+                    <div class="video-responsive">
+                        <iframe src="https://www.youtube.com/embed/${slide.video.youtubeId}?rel=0" 
+                                title="${slide.video.title}" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+            `;
+        }
+
         slideStage.innerHTML = `
             <div class="slide-header-box">
                 <span class="slide-category-tag">${slide.category || '觀念聚焦'}</span>

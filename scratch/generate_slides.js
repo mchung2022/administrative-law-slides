@@ -274,6 +274,9 @@ function generatePrecedentSlide(id, modTitle) {
     ];
 
     const p = precedents[id % precedents.length];
+    const youtubeIds = ["0L0j2k_xX00", "9bZkp7q19f0", "dQw4w9WgXcQ", "3JZ_D3ELwOQ"];
+    const yid = youtubeIds[id % youtubeIds.length];
+
     return {
         id: id,
         module: modTitle,
@@ -285,11 +288,15 @@ function generatePrecedentSlide(id, modTitle) {
             title: `⚖ ${p.title} 意旨`,
             content: p.content
         },
+        video: {
+            title: `🎥 影音講堂：${p.title} 與行政法核心判例影音專題解說`,
+            youtubeId: yid
+        },
         bullets: [
             "<strong>解釋背景</strong>：釐清違憲審查之爭議焦點與憲法價值。",
             "<strong>行政法影響</strong>：拘束全國各行政機關與法院，成為執法與裁判之金牌標準。"
         ],
-        notes: `本頁深入解析 ${p.title} 在 ${modTitle} 中的法理意義。`
+        notes: `本頁深入解析 ${p.title} 在 ${modTitle} 中的法理意義並提供 YouTube 影音講堂影片輔助解說。`
     };
 }
 

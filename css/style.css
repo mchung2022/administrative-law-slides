@@ -319,10 +319,41 @@ body {
     border-radius: var(--radius-md);
     padding: 18px 22px;
 }
-.case-box h4 {
-    color: var(--accent-amber);
+/* Video Box & Embed Components */
+.video-box {
+    background: rgba(15, 23, 42, 0.7);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    padding: 18px 22px;
+    margin-top: 14px;
+}
+
+.video-box h4 {
+    color: var(--secondary);
     font-size: 1.1rem;
-    margin-bottom: 8px;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.video-responsive {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    height: 0;
+    overflow: hidden;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--border-glow);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+}
+
+.video-responsive iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
 }
 
 .quote-box {
