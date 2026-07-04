@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>高中公民與社會｜行政法基本概念 互動式教學簡報 (102頁)</title>
+    <meta name="description" content="專為高中學生設計之行政法基本概念互動式 HTML 簡報，包含 102 頁素養選擇題、配合題與簡答題，搭配多重動畫效果與實務案例。">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <!-- Style -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="theme-dark">
+    <!-- Background Animated Canvas Glow -->
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
+
+    <!-- Application Container -->
+    <div id="app" class="app-container">
+        <!-- Header / Navigation Bar -->
+        <header class="top-header">
+            <div class="header-left">
+                <span class="badge-tag" id="module-badge">Module 1</span>
+                <h1 class="header-title" id="header-title">行政法基本概念</h1>
+            </div>
+            
+            <div class="header-center">
+                <div class="progress-bar-container" title="簡報閱讀進度">
+                    <div class="progress-bar-fill" id="progress-bar"></div>
+                </div>
+                <span class="slide-counter"><span id="current-slide-num">1</span> / <span id="total-slide-num">102</span></span>
+            </div>
+
+            <div class="header-right">
+                <div class="animation-selector-wrap">
+                    <label for="animation-select">動畫：</label>
+                    <select id="animation-select" class="nav-select">
+                        <option value="slide-fade">淡入滑動 (Slide Fade)</option>
+                        <option value="zoom">鏡頭縮放 (Zoom)</option>
+                        <option value="flip">3D 翻轉 (3D Flip)</option>
+                        <option value="bounce">動態彈跳 (Bounce)</option>
+                    </select>
+                </div>
+                <button id="btn-toc" class="icon-btn" title="模組與頁面目錄 (M)"><span class="icon">☰</span> 目錄</button>
+                <button id="btn-fullscreen" class="icon-btn" title="全螢幕 (F)"><span class="icon">⛶</span></button>
+            </div>
+        </header>
+
+        <!-- Main Slide Viewport -->
+        <main class="slide-viewport" id="slide-viewport">
+            <div id="slide-stage" class="slide-stage animation-slide-fade">
+                <!-- Dynamic Slide Content rendered by JS -->
+            </div>
+        </main>
+
+        <!-- Bottom Controls Footer -->
+        <footer class="bottom-footer">
+            <div class="footer-left">
+                <button id="btn-prev" class="nav-btn prev-btn"><span class="arrow">←</span> 上一頁 (Left)</button>
+            </div>
+
+            <div class="footer-center">
+                <button id="btn-notes" class="pill-btn" title="展開重點與講師補充 (N)">💡 重點解說</button>
+                <button id="btn-help" class="pill-btn" title="快捷鍵說明 (?)">⌨ 快捷鍵</button>
+                <div class="quick-jump">
+                    <input type="number" id="jump-input" min="1" max="102" placeholder="頁號">
+                    <button id="btn-jump" class="jump-btn">跳頁</button>
+                </div>
+            </div>
+
+            <div class="footer-right">
+                <button id="btn-next" class="nav-btn next-btn">下一頁 (Right) <span class="arrow">→</span></button>
+            </div>
+        </footer>
+
+        <!-- Slide Notes Modal / Drawer -->
+        <div id="notes-drawer" class="drawer drawer-bottom">
+            <div class="drawer-header">
+                <h3>💡 重點法理剖析與教學補充</h3>
+                <button class="close-drawer" id="close-notes">&times;</button>
+            </div>
+            <div class="drawer-body" id="notes-content">
+                <!-- Dynamic notes content -->
+            </div>
+        </div>
+
+        <!-- Table of Contents / Module Drawer -->
+        <div id="toc-drawer" class="drawer drawer-left">
+            <div class="drawer-header">
+                <h3>📚 102 頁課程與題目大綱</h3>
+                <button class="close-drawer" id="close-toc">&times;</button>
+            </div>
+            <div class="drawer-search">
+                <input type="text" id="toc-search" placeholder="搜尋章節關鍵字或題目...">
+            </div>
+            <div class="drawer-body toc-list" id="toc-list">
+                <!-- Rendered TOC items -->
+            </div>
+        </div>
+
+        <!-- Keyboard Shortcuts Help Modal -->
+        <div id="help-modal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>⌨ 簡報快捷鍵與操作指南</h3>
+                    <button class="close-modal" id="close-help">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="shortcut-grid">
+                        <div class="shortcut-item"><kbd>→</kbd> / <kbd>Space</kbd> / <kbd>PageDown</kbd> <span>下一頁</span></div>
+                        <div class="shortcut-item"><kbd>←</kbd> / <kbd>PageUp</kbd> <span>上一頁</span></div>
+                        <div class="shortcut-item"><kbd>Home</kbd> <span>回到第一頁 (Slide 1)</span></div>
+                        <div class="shortcut-item"><kbd>End</kbd> <span>前往最後一頁 (Slide 102)</span></div>
+                        <div class="shortcut-item"><kbd>M</kbd> <span>開啟 / 關閉目錄大綱</span></div>
+                        <div class="shortcut-item"><kbd>N</kbd> <span>開啟 / 關閉重點解說抽屜</span></div>
+                        <div class="shortcut-item"><kbd>F</kbd> <span>切換全螢幕模式</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/slidesData.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
