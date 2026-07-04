@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>高中公民與社會｜行政法基本概念 互動式教學簡報 (102頁)</title>
-    <meta name="description" content="專為高中學生設計之行政法基本概念互動式 HTML 簡報，包含 102 頁素養選擇題、配合題與簡答題，搭配多重動畫效果與實務案例。">
+    <title>高中公民與社會｜行政法基本概念 500頁旗艦版 互動教學簡報</title>
+    <meta name="description" content="專為高中學生設計之行政法基本概念互動式 HTML 簡報，包含 500 頁素養選擇題、配合題與簡答題，搭配多重動畫效果與 80+ 新聞真實案例。">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,7 +30,7 @@
                 <div class="progress-bar-container" title="簡報閱讀進度">
                     <div class="progress-bar-fill" id="progress-bar"></div>
                 </div>
-                <span class="slide-counter"><span id="current-slide-num">1</span> / <span id="total-slide-num">102</span></span>
+                <span class="slide-counter"><span id="current-slide-num">1</span> / <span id="total-slide-num">500</span></span>
             </div>
 
             <div class="header-right">
@@ -65,7 +65,7 @@
                 <button id="btn-notes" class="pill-btn" title="展開重點與講師補充 (N)">💡 重點解說</button>
                 <button id="btn-help" class="pill-btn" title="快捷鍵說明 (?)">⌨ 快捷鍵</button>
                 <div class="quick-jump">
-                    <input type="number" id="jump-input" min="1" max="102" placeholder="頁號">
+                    <input type="number" id="jump-input" min="1" max="500" placeholder="頁號">
                     <button id="btn-jump" class="jump-btn">跳頁</button>
                 </div>
             </div>
@@ -78,7 +78,7 @@
         <!-- Slide Notes Modal / Drawer -->
         <div id="notes-drawer" class="drawer drawer-bottom">
             <div class="drawer-header">
-                <h3>💡 重點法理剖析與教學補充</h3>
+                <h3>💡 重點法理剖析、新聞實例與教學補充</h3>
                 <button class="close-drawer" id="close-notes">&times;</button>
             </div>
             <div class="drawer-body" id="notes-content">
@@ -89,11 +89,11 @@
         <!-- Table of Contents / Module Drawer -->
         <div id="toc-drawer" class="drawer drawer-left">
             <div class="drawer-header">
-                <h3>📚 102 頁課程與題目大綱</h3>
+                <h3>📚 500 頁課程、新聞案例與題目大綱</h3>
                 <button class="close-drawer" id="close-toc">&times;</button>
             </div>
             <div class="drawer-search">
-                <input type="text" id="toc-search" placeholder="搜尋章節關鍵字或題目...">
+                <input type="text" id="toc-search" placeholder="搜尋章節關鍵字、新聞案例或題目...">
             </div>
             <div class="drawer-body toc-list" id="toc-list">
                 <!-- Rendered TOC items -->
@@ -112,8 +112,8 @@
                         <div class="shortcut-item"><kbd>→</kbd> / <kbd>Space</kbd> / <kbd>PageDown</kbd> <span>下一頁</span></div>
                         <div class="shortcut-item"><kbd>←</kbd> / <kbd>PageUp</kbd> <span>上一頁</span></div>
                         <div class="shortcut-item"><kbd>Home</kbd> <span>回到第一頁 (Slide 1)</span></div>
-                        <div class="shortcut-item"><kbd>End</kbd> <span>前往最後一頁 (Slide 102)</span></div>
-                        <div class="shortcut-item"><kbd>M</kbd> <span>開啟 / 關閉目錄大綱</span></div>
+                        <div class="shortcut-item"><kbd>End</kbd> <span>前往最後一頁 (Slide 500)</span></div>
+                        <div class="shortcut-item"><kbd>M</kbd> <span>開啟 / 關閉 500 頁大綱目錄</span></div>
                         <div class="shortcut-item"><kbd>N</kbd> <span>開啟 / 關閉重點解說抽屜</span></div>
                         <div class="shortcut-item"><kbd>F</kbd> <span>切換全螢幕模式</span></div>
                     </div>
