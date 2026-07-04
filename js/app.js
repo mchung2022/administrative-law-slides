@@ -198,8 +198,12 @@ document.addEventListener('DOMContentLoaded', () => {
         const slide = slides[index];
         if (!slide) return;
 
-        // Apply selected animation class
-        const animationType = animationSelect.value;
+        // Apply selected or random animation class
+        let animationType = animationSelect.value;
+        if (animationType === 'random') {
+            const availableAnims = ['slide-fade', 'zoom', 'flip', 'bounce'];
+            animationType = availableAnims[Math.floor(Math.random() * availableAnims.length)];
+        }
         slideStage.className = `slide-stage animation-${animationType}`;
 
         // Header updating
