@@ -1,8 +1,4 @@
-/**
- * 行政法基本概念 102 頁互動簡報 - 核心引擎與控制邏輯
- */
-
-document.addEventListener('DOMContentLoaded', () => {
+function startApp() {
     function generateFallback500Slides() {
         const modules = [
             { id: 1, title: "Module 1: 行政與行政法概論與現代法治國", start: 1, end: 50 },
@@ -885,4 +881,10 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
         `;
     }
-});
+}
+
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', startApp);
+} else {
+    startApp();
+}
