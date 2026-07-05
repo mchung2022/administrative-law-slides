@@ -103,19 +103,17 @@
             display: block;
         }
 
-        /* Engine Badge Status */
         .engine-status {
             background: rgba(16, 185, 129, 0.15);
             border: 1px solid #10b981;
             color: #34d399;
-            padding: 6px 12px;
+            padding: 8px 14px;
             border-radius: 6px;
-            font-size: 0.85rem;
+            font-size: 0.9rem;
             text-align: center;
             font-weight: bold;
         }
 
-        /* Audio Control Bar */
         .controls-row {
             display: flex;
             align-items: center;
@@ -128,33 +126,35 @@
             background: linear-gradient(135deg, #f59e0b, #d97706);
             border: none;
             color: #fff;
-            padding: 14px 28px;
+            padding: 16px 32px;
             border-radius: 30px;
-            font-size: 1.15rem;
-            font-weight: 700;
+            font-size: 1.25rem;
+            font-weight: bold;
             cursor: pointer;
             transition: transform 0.2s, box-shadow 0.2s;
             display: flex;
             align-items: center;
-            gap: 8px;
+            gap: 10px;
             width: 100%;
             justify-content: center;
+            box-shadow: 0 4px 15px rgba(245, 158, 11, 0.4);
         }
 
         .btn-play:hover {
             transform: scale(1.02);
-            box-shadow: 0 0 20px var(--primary-glow);
+            box-shadow: 0 0 25px var(--primary-glow);
         }
 
         .btn-ctrl {
             background: #334155;
             border: 1px solid #475569;
             color: #fff;
-            padding: 8px 14px;
+            padding: 10px 16px;
             border-radius: 8px;
             cursor: pointer;
-            font-size: 0.9rem;
+            font-size: 0.95rem;
             flex: 1;
+            font-weight: bold;
         }
 
         .btn-ctrl:hover { background: #475569; }
@@ -167,7 +167,7 @@
         }
 
         .time-label {
-            font-size: 0.85rem;
+            font-size: 0.9rem;
             color: var(--text-sub);
             font-family: monospace;
             min-width: 45px;
@@ -179,13 +179,12 @@
             cursor: pointer;
         }
 
-        /* Speed & Volume Control */
         .settings-bar {
             display: flex;
             align-items: center;
             justify-content: space-between;
             background: #0f172a;
-            padding: 10px 16px;
+            padding: 12px 16px;
             border-radius: 8px;
             font-size: 0.9rem;
         }
@@ -194,7 +193,7 @@
             background: #1e293b;
             color: #fff;
             border: 1px solid #475569;
-            padding: 4px 8px;
+            padding: 6px 10px;
             border-radius: 6px;
             cursor: pointer;
         }
@@ -205,7 +204,7 @@
             border: 1px solid var(--card-border);
             border-radius: var(--radius);
             padding: 20px;
-            max-height: 520px;
+            max-height: 540px;
             overflow-y: auto;
             display: flex;
             flex-direction: column;
@@ -240,7 +239,7 @@
 
         .chapter-card.active {
             border-color: #f59e0b;
-            background: linear-gradient(135deg, rgba(245, 158, 11, 0.15), rgba(59, 130, 246, 0.15));
+            background: linear-gradient(135deg, rgba(245, 158, 11, 0.2), rgba(59, 130, 246, 0.2));
         }
 
         .chapter-info h4 {
@@ -300,7 +299,7 @@
 <body>
 
     <div class="header-container">
-        <span class="badge">🎙️ 雙引擎 100% 必響影音面板</span>
+        <span class="badge">🎙️ 廣播影音雙引擎播放面板</span>
         <h1>行政法 500 頁旗艦總複習 — 30 分鐘特企 Podcast 廣播講堂</h1>
         <p>整合 108 課綱公民與社會素養、80+ 臺灣新聞時事、司法院大法官解釋與行政訴訟救濟 | 臺灣法治教育與大考公民命題研究組</p>
     </div>
@@ -309,7 +308,7 @@
         <!-- Player Card -->
         <div class="player-card">
             <div class="engine-status" id="engineStatus">
-                🔊 語音雙引擎準備就緒（本機 WAV 音訊 + 瀏覽器高音質真人語音 TTS）
+                🔊 雙發聲引擎已就緒：點擊下方金色按鈕即可 100% 播放聲音！
             </div>
 
             <div class="visualizer-box">
@@ -324,7 +323,7 @@
                 <span class="time-label" id="durationTime">30:00</span>
             </div>
 
-            <button class="btn-play" id="btnPlay">▶️ 點擊立即播放廣播節目 (雙引擎語音)</button>
+            <button class="btn-play" id="btnPlay">▶️ 點擊立即播放廣播節目</button>
 
             <div class="controls-row">
                 <button class="btn-ctrl" id="btnRewind">⏪ 後退 10 秒</button>
@@ -378,11 +377,23 @@
             { id: 10, start: 1620, end: 1800, time: "27:00", title: "Module 10：國家責任全剖析與大考結業錦囊", topic: "國家賠償法第 2 條與第 3 條、協議先行程序與總複習結業叮嚀" }
         ];
 
-        let fullScriptData = {};
+        // Embedded Script Data for offline & file:// compatibility
+        const fullScriptData = {
+            1: "【節目音樂片頭開場 - 00:00】\n哈囉！各位同學、法學愛好者與各大考試的考生們，大家辛苦了！歡迎收聽《行政法 500 頁旗艦總複習——30 分鐘特企 Podcast 廣播講堂》！我是你們的法治導師。今天這集 30 分鐘的精華節目，是我們團隊特別從《行政法 500 頁旗艦講義》與 50 萬字大書講稿中，濃縮出來最精華、最核心的公法心法！首先，我們來到第一單元【Module 1：行政與行政法概論】。行政是國家為了實現公益，依法行使公權力的動態過程。核心劃分即區分「公權力行政（負擔處分與高權行為）」與「私經濟國庫行政（私法採購或國營事業經營）」。若機關係立於民法私經濟主體地位採購，屬私法契約；但若涉及公權力單方干涉或裁罰，則受行政程序法嚴格拘束！",
+            2: "【Module 2：依法行政原則與層次化法律保留】依法行政係公法最高天條！消極依法行政即「法律優位原則」（行政程序法第 4 條），行政命令與處置絕不得抵觸法律；積極依法行政即「法律保留原則」，無法律授權不得限制人民權利！司法院釋字第 443 號劃分四大層級：憲法保留（人身自由與提審）、絕對法律保留（限制生命身體自由之刑罰與管束）、相對法律保留（課稅、裁罰與營業限制），以及執行性細節性行政規則！",
+            3: "【Module 3：一般法律原則（一）：平等原則與比例原則】行政程序法第 6 條平等原則保障「實質平等」，法理鐵律：「違法者不得主張違法之平等！」第 7 條比例原則三大過磅子原則：適當性（手段有助目的）、必要性（最小侵害）與狹義比例性（手段與目的衡量不得顯失均衡）！",
+            4: "【Module 4：一般法律原則（二）：信賴保護與裁量控制】行政程序法第 8 條信賴保護三要件：信賴基礎（行政處分）、信賴表現（付諸經濟法律行為）與信賴值得保護！第 10 條裁量控制三大違法態樣：裁量逾越（超過授權上下限）、裁量濫用（考量不相關因素）與裁量怠惰（拒絕在個案中彈性裁量）！",
+            5: "【Module 5：行政處分黃金六要素與無效撤銷】行政程序法第 92 條黃金六要件：行政機關、公法事件、單方行為、具體處置、對外直接與產生法律效果！第 111 條重大明顯瑕疵自始無效；第 117 條一般違法處分得依職權或於 30 日不變期間內提起訴願及撤銷訴訟予以撤銷！",
+            6: "【Module 6：行政行為態樣（二）：行政契約與行政指導】行政程序法第 135 條行政契約（公費醫學生契約、健保合約），爭議應提一般給付訴訟；第 165 條行政指導不具法律強制力，相對人得明確拒絕，機關不得給予不利處分！",
+            7: "【Module 7：行政罰法原理與新聞裁罰】行政罰法定原則、第 7 條主觀歸責（機關舉證故意過失）與第 24 條一行為不二罰（刑事優先原則，不起訴或緩起訴後始得裁處行政罰鍰）！",
+            8: "【Module 8：行政執行法與即時強制】金錢給付執行（移送行政執行署分署）、行為不行為執行（代履行與怠金）與第 36 條即時強制（管束、扣留、進入住宅，屬公法合法特別犧牲，得請求損失補償）！",
+            9: "【Module 9：訴願 30 日與行政訴訟三級二審】處分送達 30 日不變期間向原處分機關之上級提起訴願；訴願前置原則；行政訴訟三大類型：撤銷訴訟、課予義務訴訟、一般給付與確認訴訟；高等行政訴訟庭與最高行政法院三級二審制！",
+            10: "【Module 10：國家責任與大考總複習】國家賠償法第 2 條公務員違法過失責任、第 3 條公有公共設施無過失責任；協議先行程序；恭喜完成 30 分鐘特企 Podcast 廣播講堂！"
+        };
+
         let currentChapterId = 1;
         let isPlayingState = false;
 
-        // Web Speech Synthesis Engine
         const speechSynth = window.speechSynthesis;
         let voices = [];
 
@@ -395,15 +406,6 @@
         if (speechSynth && speechSynth.onvoiceschanged !== undefined) {
             speechSynth.onvoiceschanged = loadVoices;
         }
-
-        // Fetch JSON script
-        fetch('scratch/podcast_script_30min.json')
-            .then(res => res.json())
-            .then(data => {
-                data.forEach(item => { fullScriptData[item.id] = item.script; });
-                updateTranscriptView(1);
-            })
-            .catch(() => {});
 
         const audio = document.getElementById('mainAudio');
         const btnPlay = document.getElementById('btnPlay');
@@ -463,7 +465,7 @@
             if (!ch) return;
 
             isPlayingState = true;
-            btnPlay.textContent = "⏸️ 暫停節目";
+            btnPlay.textContent = "⏸️ 暫停廣播節目";
 
             // Try Audio Playback
             audio.currentTime = ch.start;
@@ -471,11 +473,10 @@
 
             if (playPromise !== undefined) {
                 playPromise.then(() => {
-                    engineStatus.textContent = "🔊 音訊引擎：正透過高音質 WAV 音訊播放中...";
+                    engineStatus.textContent = "🔊 音訊引擎發聲中：廣播節目播放中...";
                     if (speechSynth) speechSynth.cancel();
-                }).catch(err => {
-                    // Fallback to Web Speech Synthesis TTS
-                    engineStatus.textContent = "🎙️ 語音引擎：音訊自動播放受限，已自動啟動瀏覽器真人口播語音！";
+                }).catch(() => {
+                    engineStatus.textContent = "🎙️ 語音引擎發聲中：已啟動瀏覽器高音質真人口播語音！";
                     speakScriptTTS(fullScriptData[chId] || ch.topic);
                 });
             } else {
@@ -511,7 +512,7 @@
             isPlayingState = false;
             audio.pause();
             if (speechSynth) speechSynth.cancel();
-            btnPlay.textContent = "▶️ 點擊立即播放廣播節目 (雙引擎語音)";
+            btnPlay.textContent = "▶️ 點擊立即播放廣播節目";
             engineStatus.textContent = "⏸️ 已暫停播放（雙引擎就緒）";
         }
 
