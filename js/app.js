@@ -2,6 +2,7 @@
  * 行政法基本概念 102 頁互動簡報 - 核心引擎與控制邏輯
  */
 
+document.addEventListener('DOMContentLoaded', () => {
     function getSlides() {
         return window.slidesData || [];
     }
@@ -75,7 +76,7 @@
                 break;
             case 'End':
                 e.preventDefault();
-                goToSlide(totalSlides - 1);
+                goToSlide(getTotalSlides() - 1);
                 break;
             case 'm':
             case 'M':
