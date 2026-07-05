@@ -87,7 +87,6 @@ ${cssContent}
             </div>
 
             <div class="footer-center">
-                <button id="btn-podcast" class="pill-btn" style="background: linear-gradient(135deg, var(--primary), var(--accent-purple)); color:#fff; font-weight:700;" title="開啟 Podcast 語音廣播與逐字稿 (P)">🎙️ PODCAST 廣播 (P)</button>
                 <button id="btn-notes" class="pill-btn" title="展開重點與講師補充 (N)">💡 重點解說</button>
                 <button id="btn-help" class="pill-btn" title="快捷鍵說明 (?)">⌨ 快捷鍵</button>
                 <div class="quick-jump">
@@ -101,33 +100,6 @@ ${cssContent}
             </div>
         </footer>
 
-        <!-- Podcast Drawer / Audio Player -->
-        <div id="podcast-drawer" class="drawer drawer-bottom">
-            <div class="drawer-header">
-                <div style="display:flex; align-items:center; gap:12px;">
-                    <h3>🎙️ 1 分鐘 PODCAST 廣播講堂</h3>
-                    <div class="sound-wave" id="sound-wave">
-                        <span></span><span></span><span></span><span></span>
-                    </div>
-                </div>
-                <button class="close-drawer" id="close-podcast">&times;</button>
-            </div>
-            <div class="drawer-body">
-                <div class="podcast-bar">
-                    <div class="podcast-info">
-                        <div class="podcast-avatar">🎙️</div>
-                        <div class="podcast-text-wrap">
-                            <h5 id="podcast-episode-title">【PODCAST 第 1 集】行政法基本概念與現代法治國專題</h5>
-                            <p>單集長度：約 1 分鐘口述深度導讀（專業名師與法學主播聯名廣播）</p>
-                        </div>
-                    </div>
-                    <div class="podcast-controls">
-                        <button class="podcast-btn" id="btn-play-podcast">▶ 播放 PODCAST</button>
-                        <button class="podcast-btn" id="btn-stop-podcast" style="background: rgba(255,255,255,0.15);">⏹ 停止</button>
-                    </div>
-                </div>
-                <div class="podcast-transcript-box" id="podcast-transcript-content">
-                    <!-- Dynamic podcast 1+ minute transcript text -->
                 </div>
             </div>
         </div>

@@ -1348,7 +1348,6 @@ kbd {
             </div>
 
             <div class="footer-center">
-                <button id="btn-podcast" class="pill-btn" style="background: linear-gradient(135deg, var(--primary), var(--accent-purple)); color:#fff; font-weight:700;" title="開啟 Podcast 語音廣播與逐字稿 (P)">🎙️ PODCAST 廣播 (P)</button>
                 <button id="btn-notes" class="pill-btn" title="展開重點與講師補充 (N)">💡 重點解說</button>
                 <button id="btn-help" class="pill-btn" title="快捷鍵說明 (?)">⌨ 快捷鍵</button>
                 <div class="quick-jump">
@@ -1362,33 +1361,6 @@ kbd {
             </div>
         </footer>
 
-        <!-- Podcast Drawer / Audio Player -->
-        <div id="podcast-drawer" class="drawer drawer-bottom">
-            <div class="drawer-header">
-                <div style="display:flex; align-items:center; gap:12px;">
-                    <h3>🎙️ 1 分鐘 PODCAST 廣播講堂</h3>
-                    <div class="sound-wave" id="sound-wave">
-                        <span></span><span></span><span></span><span></span>
-                    </div>
-                </div>
-                <button class="close-drawer" id="close-podcast">&times;</button>
-            </div>
-            <div class="drawer-body">
-                <div class="podcast-bar">
-                    <div class="podcast-info">
-                        <div class="podcast-avatar">🎙️</div>
-                        <div class="podcast-text-wrap">
-                            <h5 id="podcast-episode-title">【PODCAST 第 1 集】行政法基本概念與現代法治國專題</h5>
-                            <p>單集長度：約 1 分鐘口述深度導讀（專業名師與法學主播聯名廣播）</p>
-                        </div>
-                    </div>
-                    <div class="podcast-controls">
-                        <button class="podcast-btn" id="btn-play-podcast">▶ 播放 PODCAST</button>
-                        <button class="podcast-btn" id="btn-stop-podcast" style="background: rgba(255,255,255,0.15);">⏹ 停止</button>
-                    </div>
-                </div>
-                <div class="podcast-transcript-box" id="podcast-transcript-content">
-                    <!-- Dynamic podcast 1+ minute transcript text -->
                 </div>
             </div>
         </div>
@@ -12153,146 +12125,11 @@ document.addEventListener('DOMContentLoaded', () => {
             case 'F':
                 toggleFullscreen();
                 break;
-            case 'p':
-            case 'P':
-                toggleDrawer(podcastDrawer);
-                break;
             case '?':
                 toggleModal(helpModal);
                 break;
         }
     });
-
-    // Podcast Speech Synthesis Engine & Drawer Controls
-    const btnPodcast = document.getElementById('btn-podcast');
-    const podcastDrawer = document.getElementById('podcast-drawer');
-    const closePodcast = document.getElementById('close-podcast');
-    const podcastEpisodeTitle = document.getElementById('podcast-episode-title');
-    const podcastTranscriptContent = document.getElementById('podcast-transcript-content');
-    const btnPlayPodcast = document.getElementById('btn-play-podcast');
-    const btnStopPodcast = document.getElementById('btn-stop-podcast');
-    const soundWave = document.getElementById('sound-wave');
-
-    let isSpeaking = false;
-    let currentUtterance = null;
-
-    btnPodcast.addEventListener('click', () => toggleDrawer(podcastDrawer));
-    closePodcast.addEventListener('click', () => {
-        podcastDrawer.classList.remove('active');
-        stopPodcastSpeech();
-    });
-
-    btnPlayPodcast.addEventListener('click', () => {
-        if (isSpeaking) {
-            pausePodcastSpeech();
-        } else {
-            playPodcastSpeech();
-        }
-    });
-
-    btnStopPodcast.addEventListener('click', stopPodcastSpeech);
-
-    let audioCtx = null;
-
-    function playAudioToneFallback() {
-        try {
-            const AudioCtxClass = window.AudioContext || window.webkitAudioContext;
-            if (!AudioCtxClass) return;
-            if (!audioCtx) audioCtx = new AudioCtxClass();
-            if (audioCtx.state === 'suspended') {
-                audioCtx.resume();
-            }
-
-            const osc = audioCtx.createOscillator();
-            const gain = audioCtx.createGain();
-            osc.type = 'sine';
-            osc.frequency.setValueAtTime(523.25, audioCtx.currentTime); // C5 note
-            osc.frequency.exponentialRampToValueAtTime(659.25, audioCtx.currentTime + 0.2); // E5 note
-            gain.gain.setValueAtTime(0.2, audioCtx.currentTime);
-            gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.5);
-            osc.connect(gain);
-            gain.connect(audioCtx.destination);
-            osc.start();
-            osc.stop(audioCtx.currentTime + 0.5);
-        } catch(e) {
-            console.log('Web Audio tone chime:', e);
-        }
-    }
-
-    function playPodcastSpeech() {
-        const slides = getSlides();
-        const slide = slides[currentSlideIndex];
-        if (!slide) return;
-
-        // Auto open drawer so transcript is instantly readable
-        if (podcastDrawer && !podcastDrawer.classList.contains('active')) {
-            podcastDrawer.classList.add('active');
-        }
-
-        // Always play an audible sound chime for instant audio feedback
-        playAudioToneFallback();
-
-        window.speechSynthesis.cancel();
-        const scriptText = slide.podcastScript || slide.notes || slide.title;
-        const cleanText = scriptText.replace(/<[^>]*>?/gm, '');
-        currentUtterance = new SpeechSynthesisUtterance(cleanText);
-        currentUtterance.lang = 'zh-TW';
-        currentUtterance.rate = 1.0;
-
-        isSpeaking = true;
-        btnPlayPodcast.textContent = '⏸ 暫停 PODCAST';
-        if (soundWave) soundWave.classList.add('playing');
-
-        currentUtterance.onstart = () => {
-            isSpeaking = true;
-            btnPlayPodcast.textContent = '⏸ 暫停 PODCAST';
-            if (soundWave) soundWave.classList.add('playing');
-        };
-
-        currentUtterance.onend = () => {
-            isSpeaking = false;
-            btnPlayPodcast.textContent = '▶ 播放 PODCAST';
-            if (soundWave) soundWave.classList.remove('playing');
-        };
-
-        currentUtterance.onerror = (e) => {
-            console.warn('SpeechSynthesis error:', e);
-            isSpeaking = false;
-            btnPlayPodcast.textContent = '▶ 播放 PODCAST';
-            if (soundWave) soundWave.classList.remove('playing');
-            if (podcastTranscriptContent) {
-                let notice = podcastTranscriptContent.querySelector('.speech-error-notice');
-                if (!notice) {
-                    notice = document.createElement('p');
-                    notice.className = 'speech-error-notice';
-                    notice.style.color = 'var(--accent-amber)';
-                    notice.style.marginTop = '10px';
-                    notice.innerHTML = '💡 <strong>提示：</strong> 音訊播音與逐字稿已就緒，您可對照閱讀上方 1 分鐘廣播解說。';
-                    podcastTranscriptContent.appendChild(notice);
-                }
-            }
-        };
-
-        try {
-            window.speechSynthesis.speak(currentUtterance);
-        } catch(err) {
-            console.warn('SpeechSynthesis.speak exception:', err);
-        }
-    }
-
-    function pausePodcastSpeech() {
-        window.speechSynthesis.pause();
-        isSpeaking = false;
-        btnPlayPodcast.textContent = '▶ 繼續播放';
-        soundWave.classList.remove('playing');
-    }
-
-    function stopPodcastSpeech() {
-        window.speechSynthesis.cancel();
-        isSpeaking = false;
-        btnPlayPodcast.textContent = '▶ 播放 PODCAST';
-        soundWave.classList.remove('playing');
-    }
 
     // Drawers and Modals Toggle
     function toggleDrawer(drawer) {
@@ -12392,24 +12229,9 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         slideStage.className = `slide-stage animation-${animationType}`;
 
-        // Stop current speech on slide change
-        stopPodcastSpeech();
-
         // Header updating
         moduleBadge.textContent = slide.module || 'Module';
         headerTitle.textContent = slide.title || '行政法基本概念';
-
-        // Update Podcast Episode Title & Transcript Box
-        if (podcastEpisodeTitle) {
-            podcastEpisodeTitle.textContent = `【PODCAST 第 ${slide.id} 集】${slide.title}`;
-        }
-        if (podcastTranscriptContent) {
-            const transcript = slide.podcastScript || slide.notes || `歡迎收聽第 ${slide.id} 集 Podcast 廣播！本頁聚焦於 ${slide.title} 之核心法理剖析。`;
-            podcastTranscriptContent.innerHTML = `
-                <p><strong>🎙️【PODCAST 廣播導師口述逐字稿（單集預估導讀長度：約 1 分鐘）】</strong></p>
-                <p style="margin-top:8px;">${transcript}</p>
-            `;
-        }
 
         // Update Notes Drawer Content
         notesContent.innerHTML = slide.notes ? `
