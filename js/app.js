@@ -180,10 +180,22 @@ document.addEventListener('DOMContentLoaded', () => {
             soundWave.classList.remove('playing');
         };
 
-        currentUtterance.onerror = () => {
+        currentUtterance.onerror = (e) => {
+            console.warn('SpeechSynthesis error:', e);
             isSpeaking = false;
             btnPlayPodcast.textContent = '▶ 播放 PODCAST';
             soundWave.classList.remove('playing');
+            if (podcastTranscriptContent) {
+                let notice = podcastTranscriptContent.querySelector('.speech-error-notice');
+                if (!notice) {
+                    notice = document.createElement('p');
+                    notice.className = 'speech-error-notice';
+                    notice.style.color = 'var(--accent-amber)';
+                    notice.style.marginTop = '10px';
+                    notice.innerHTML = '💡 <strong>提示：</strong> 您的瀏覽器語音合成需手動開啟，您亦可直接對照閱讀上方 1 分鐘逐字稿解說。';
+                    podcastTranscriptContent.appendChild(notice);
+                }
+            }
         };
 
         window.speechSynthesis.speak(currentUtterance);
