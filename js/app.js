@@ -144,9 +144,15 @@ function startApp() {
                 item = {
                     id: i, module: modTitle, type: "concept", category: "臺灣新聞真實案例解析",
                     title: `Slide ${i}: 臺灣新聞案例 — ${topic} 時事剖析`, subtitle: "新聞時事與行政法規實務連結",
-                    caseStudy: { title: `📰 臺灣新聞事件 Slide ${i}：涉及 ${topic} 之社會焦點報導`, content: `【新聞報導摘要 Slide ${i}】：某主管機關針對涉及「${topic}」之社會關注事件進行稽查開罰。` },
-                    bullets: [`<strong>法理剖析</strong>：檢視新聞事件中對 ${topic} 之執法依據。`, `<strong>權利救濟</strong>：分析受處分人如何透過訴願保障權益。`],
-                    highlight: `Slide ${i} 新聞案例是高中公民學測命題熱點！`,
+                    caseStudy: {
+                        title: `📰 臺灣新聞事件 Slide ${i}：涉及 ${topic} 之社會焦點報導`,
+                        content: `【新聞簡報摘要】：主管機關針對「${topic}」事件依法執法，當事人對處分合法性提出質疑。以下進行事件脈絡、法律爭點與大考考點三維解析。`,
+                        context: `【時事事件脈絡 Slide ${i}】：近年臺灣社會引發熱議之「${topic}」焦點事件。主管機關稽查時針對涉案業者或當事人作出強制處分或裁罰，受處分人主張機關處置過度侵害其權利。`,
+                        dispute: `【核心法律爭點 Slide ${i}】：1. 檢視該行政處分是否有法律授權（法律保留原則，釋字443號）；2. 處置手段是否符合比例原則（適當性、最小侵害性與狹義過磅衡量）；3. 受處分人得否主張信賴保護與平等原則。`,
+                        examPoints: `【學測與分科測驗考點 Slide ${i}】：🎯 命題焦點：大考高頻考察「${topic}」之法理判斷！重點掌握：① 行政處分構成要件；② 訴願30日不變期間；③ 撤銷訴訟與行政救濟。預防陷阱：勿將私經濟行政與公權力行政混淆！`
+                    },
+                    bullets: [`<strong>法理剖析</strong>：檢視新聞事件中對 ${topic} 之執法依據與比例原則。`, `<strong>權利救濟</strong>：分析受處分人如何透過訴願與行政訴訟保障合法權益。`],
+                    highlight: `Slide ${i} 新聞案例是高中公民學測與分科測驗素養題命題熱點！`,
                     notes: `Slide ${i} 提供 ${modTitle} 範疇中 ${topic} 之臺灣新聞實務個案解析。`
                 };
             } else if (offset % 4 === 2) {
@@ -520,12 +526,38 @@ function startApp() {
         }
 
         if (slide.caseStudy) {
-            contentHtml += `
-                <div class="case-box animate-item">
-                    <h4>🔍 生活情境案例：${slide.caseStudy.title}</h4>
-                    <p>${slide.caseStudy.content}</p>
-                </div>
-            `;
+            const cs = slide.caseStudy;
+            if (cs.context && cs.dispute && cs.examPoints) {
+                contentHtml += `
+                    <div class="news-case-container animate-item">
+                        <div class="news-case-header">
+                            <span class="news-badge">📰 臺灣新聞真實案例剖析</span>
+                            <h4>${cs.title || '新聞案例剖析'}</h4>
+                        </div>
+                        <div class="news-case-grid">
+                            <div class="news-card news-context">
+                                <div class="news-card-title">📜 一、事件脈絡與背景</div>
+                                <div class="news-card-body">${cs.context}</div>
+                            </div>
+                            <div class="news-card news-dispute">
+                                <div class="news-card-title">⚖️ 二、法律爭點與攻防</div>
+                                <div class="news-card-body">${cs.dispute}</div>
+                            </div>
+                            <div class="news-card news-exam">
+                                <div class="news-card-title">🎯 三、大考考點與解題指南</div>
+                                <div class="news-card-body">${cs.examPoints}</div>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            } else {
+                contentHtml += `
+                    <div class="case-box animate-item">
+                        <h4>🔍 生活情境案例：${cs.title}</h4>
+                        <p>${cs.content}</p>
+                    </div>
+                `;
+            }
         }
 
         if (slide.quote) {

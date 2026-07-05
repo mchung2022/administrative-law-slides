@@ -491,6 +491,96 @@ body {
     border-radius: var(--radius-md);
     padding: 18px 22px;
 }
+
+/* News Case 3-Section Structured Layout */
+.news-case-container {
+    background: linear-gradient(135deg, rgba(30, 41, 59, 0.85), rgba(15, 23, 42, 0.95));
+    border: 1px solid rgba(245, 158, 11, 0.4);
+    border-radius: var(--radius-lg);
+    padding: 22px;
+    margin-top: 16px;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+}
+
+.news-case-header {
+    margin-bottom: 16px;
+    border-bottom: 1px dashed rgba(245, 158, 11, 0.3);
+    padding-bottom: 12px;
+}
+
+.news-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #f59e0b, #d97706);
+    color: #fff;
+    font-size: 0.85rem;
+    font-weight: 700;
+    padding: 4px 12px;
+    border-radius: 20px;
+    margin-bottom: 8px;
+    letter-spacing: 0.5px;
+}
+
+.news-case-header h4 {
+    color: #fbbf24;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.news-case-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+}
+
+@media (max-width: 900px) {
+    .news-case-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.news-card {
+    background: rgba(15, 23, 42, 0.6);
+    border-radius: var(--radius-md);
+    padding: 16px;
+    border: 1px solid var(--border-color);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.news-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+}
+
+.news-context {
+    border-top: 3px solid #3b82f6;
+}
+
+.news-dispute {
+    border-top: 3px solid #ef4444;
+}
+
+.news-exam {
+    border-top: 3px solid #10b981;
+}
+
+.news-card-title {
+    font-weight: 700;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.news-context .news-card-title { color: #60a5fa; }
+.news-dispute .news-card-title { color: #f87171; }
+.news-exam .news-card-title { color: #34d399; }
+
+.news-card-body {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--text-color);
+}
 /* Video Box & Embed Components */
 .video-box {
     background: rgba(15, 23, 42, 0.7);
