@@ -41,8 +41,8 @@ async def main():
             line_mp3 = os.path.join(ch_dir, f"line_{l_idx+1}.mp3")
             line_files.append(line_mp3)
             
-            # Natural adult conversational broadcast speed: rate="-50%"
-            comm = edge_tts.Communicate(clean_text, voice, rate="-50%")
+            # Comfortable adult daily conversational broadcast speed: rate="-18%"
+            comm = edge_tts.Communicate(clean_text, voice, rate="-18%")
             await comm.save(line_mp3)
             await asyncio.sleep(0.08)
             
