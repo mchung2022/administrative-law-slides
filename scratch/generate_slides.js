@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-console.log("Generating 500 100% Unique slides dataset for Administrative Law presentation...");
+console.log("Generating 500 slides dataset with 1+ MINUTE PODCAST AUDIO SCRIPTS for HTML Presentation...");
 
 const modules = [
     { id: 1, title: "Module 1: 行政與行政法概論與現代法治國", start: 1, end: 50 },
@@ -18,7 +18,6 @@ const modules = [
 
 const slides = [];
 
-// Unique Legal Topics for 500 Slides
 const legalTopics = [
     "公權力行政與私經濟行政劃分", "高鐵與國營事業採購行為性質", "給付行政與服務性國家理念", "成文法源金字塔體系", "不成文法源與一般法律原則",
     "公法與私法劃分實益與法院管轄", "民主法治國依法行政原則", "消極依法行政之法律優位原則", "積極依法行政之法律保留原則", "釋字 443 號層次化法律保留體系",
@@ -45,6 +44,10 @@ const legalTopics = [
     "公法上損失補償（合法特別犧牲）", "國賠求償權與協議先行程序", "疫情隔離管制與補償法理", "路面坑洞傷人國賠案例", "校園權利抗爭與綜合大會考"
 ];
 
+function generatePodcastScript(id, modTitle, topic, title) {
+    return `哈囉各位同學！歡迎來到今天的行政法 Podcast 廣播講堂，我是你們的法治導師。今天第 ${id} 集我們要探討的主題是【${title}】。在 ${modTitle} 的範疇中，${topic} 佔據了極為關鍵的法理地位。當我們觀察政府行使公權力時，必須時刻檢視其行為是否遵循依法行政原則與法律保留原則。舉例來說，當行政機關做出侵害人民自由或財產的處分時，如果缺乏立法院通過的法律作為授權依據，或者手段違反了比例原則，這時候人民就可以透過訴願與行政訴訟來維護自身權利。希望同學們在收聽完這一集 1 分鐘的廣播解說後，能靈活運用法學思維，在大考中輕鬆奪取頂標分數！我們下一集 Podcast 再見！`;
+}
+
 for (let i = 1; i <= 500; i++) {
     const mod = modules.find(m => i >= m.start && i <= m.end);
     const modTitle = mod.title;
@@ -58,6 +61,7 @@ for (let i = 1; i <= 500; i++) {
             category: "108課綱 高中公民與社會選修/必修 500頁旗艦版",
             title: "行政法基本概念與現代法治國專題",
             subtitle: "全景學習：從 80+ 臺灣新聞時事案例、憲判字典範到素養五大題型大會考",
+            podcastScript: generatePodcastScript(1, modTitle, "行政法概論", "行政法基本概念與現代法治國專題"),
             notes: "歡迎體驗 500 頁行政法旗艦教學簡報！本簡報整合憲法法庭判決、大法官解釋與新聞時事案例，為高中學生打造法治素養與考前應試能力。"
         });
         continue;
@@ -71,6 +75,7 @@ for (let i = 1; i <= 500; i++) {
             category: "500頁旗艦簡報 結業與總複習",
             title: "恭喜完成 500 頁行政法素養大師課程！",
             subtitle: "法者，正義之基石，公民權利之盾牌。",
+            podcastScript: generatePodcastScript(500, modTitle, "行政法結業總複習", "恭喜完成 500 頁行政法素養大師課程！"),
             notes: "感謝使用本套 500 頁行政法基本概念互動簡報，祝學習順利、大考高分！"
         });
         continue;
@@ -89,6 +94,7 @@ for (let i = 1; i <= 500; i++) {
                 { title: `Slide ${i} 救濟與實務應用`, content: "精準識別違法行政行為態樣，主張正確之行政訴訟與國賠補償。" }
             ],
             conclusion: `完成 Slide ${i}！奠定學測與分科測驗公民科素養題頂標實力。`,
+            podcastScript: generatePodcastScript(i, modTitle, topic, `Slide ${i}: ${modTitle} 總結歸納與心智圖`),
             notes: `本頁為 Slide ${i} ${modTitle} 之觀念總結與心智圖整理。`
         });
         continue;
@@ -96,23 +102,27 @@ for (let i = 1; i <= 500; i++) {
 
     const offset = (i - 1) % 50;
 
+    let slideItem;
     if ([10, 20, 30, 40, 48].includes(offset)) {
-        slides.push(generateMultipleChoiceSlide(i, modTitle, topic));
+        slideItem = generateMultipleChoiceSlide(i, modTitle, topic);
     } else if ([15, 25, 35].includes(offset)) {
-        slides.push(generateMatchingSlide(i, modTitle, topic));
+        slideItem = generateMatchingSlide(i, modTitle, topic);
     } else if ([18, 28, 38].includes(offset)) {
-        slides.push(generateShortAnswerSlide(i, modTitle, topic));
+        slideItem = generateShortAnswerSlide(i, modTitle, topic);
     } else if ([12, 22, 32, 42].includes(offset)) {
-        slides.push(generateTrueFalseSlide(i, modTitle, topic));
+        slideItem = generateTrueFalseSlide(i, modTitle, topic);
     } else if ([14, 24, 34, 44].includes(offset)) {
-        slides.push(generateFillInBlankSlide(i, modTitle, topic));
+        slideItem = generateFillInBlankSlide(i, modTitle, topic);
     } else if (offset % 4 === 1) {
-        slides.push(generateNewsCaseSlide(i, modTitle, topic));
+        slideItem = generateNewsCaseSlide(i, modTitle, topic);
     } else if (offset % 4 === 2) {
-        slides.push(generatePrecedentSlide(i, modTitle, topic));
+        slideItem = generatePrecedentSlide(i, modTitle, topic);
     } else {
-        slides.push(generateConceptSlide(i, modTitle, topic));
+        slideItem = generateConceptSlide(i, modTitle, topic);
     }
+
+    slideItem.podcastScript = generatePodcastScript(i, modTitle, topic, slideItem.title);
+    slides.push(slideItem);
 }
 
 function generateMultipleChoiceSlide(id, modTitle, topic) {
@@ -266,12 +276,11 @@ function generateConceptSlide(id, modTitle, topic) {
 
 // Write file
 const outputContent = `/**
- * 行政法基本概念 500 頁旗艦版完整素養數據庫 (100% 獨一無二無重複版本)
- * 涵蓋 10 大模組、80+ 新聞真實案例、憲判字典範、50 題選擇題、30 題配合題、30 題簡答題、40 題是非題、40 題填充題
+ * 行政法基本概念 500 頁旗艦版完整素養數據庫 (附 500 集 1 分鐘+ PODCAST 口述廣播逐字稿)
  */
 
 window.slidesData = ${JSON.stringify(slides, null, 2)};
 `;
 
 fs.writeFileSync(path.join(__dirname, '../js/slidesData.js'), outputContent, 'utf8');
-console.log(`Successfully generated 500 100% UNIQUE slides into js/slidesData.js! Total slides count: ${slides.length}`);
+console.log(`Successfully generated 500 slides with 1+ Minute PODCAST scripts into js/slidesData.js! Total slides: ${slides.length}`);

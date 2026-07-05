@@ -118,11 +118,90 @@ document.addEventListener('DOMContentLoaded', () => {
             case 'F':
                 toggleFullscreen();
                 break;
+            case 'p':
+            case 'P':
+                toggleDrawer(podcastDrawer);
+                break;
             case '?':
                 toggleModal(helpModal);
                 break;
         }
     });
+
+    // Podcast Speech Synthesis Engine & Drawer Controls
+    const btnPodcast = document.getElementById('btn-podcast');
+    const podcastDrawer = document.getElementById('podcast-drawer');
+    const closePodcast = document.getElementById('close-podcast');
+    const podcastEpisodeTitle = document.getElementById('podcast-episode-title');
+    const podcastTranscriptContent = document.getElementById('podcast-transcript-content');
+    const btnPlayPodcast = document.getElementById('btn-play-podcast');
+    const btnStopPodcast = document.getElementById('btn-stop-podcast');
+    const soundWave = document.getElementById('sound-wave');
+
+    let isSpeaking = false;
+    let currentUtterance = null;
+
+    btnPodcast.addEventListener('click', () => toggleDrawer(podcastDrawer));
+    closePodcast.addEventListener('click', () => {
+        podcastDrawer.classList.remove('active');
+        stopPodcastSpeech();
+    });
+
+    btnPlayPodcast.addEventListener('click', () => {
+        if (isSpeaking) {
+            pausePodcastSpeech();
+        } else {
+            playPodcastSpeech();
+        }
+    });
+
+    btnStopPodcast.addEventListener('click', stopPodcastSpeech);
+
+    function playPodcastSpeech() {
+        const slide = slides[currentSlideIndex];
+        if (!slide) return;
+
+        window.speechSynthesis.cancel();
+        const scriptText = slide.podcastScript || slide.notes || slide.title;
+        const cleanText = scriptText.replace(/<[^>]*>?/gm, '');
+        currentUtterance = new SpeechSynthesisUtterance(cleanText);
+        currentUtterance.lang = 'zh-TW';
+        currentUtterance.rate = 1.0;
+
+        currentUtterance.onstart = () => {
+            isSpeaking = true;
+            btnPlayPodcast.textContent = '⏸ 暫停 PODCAST';
+            soundWave.classList.add('playing');
+        };
+
+        currentUtterance.onend = () => {
+            isSpeaking = false;
+            btnPlayPodcast.textContent = '▶ 播放 PODCAST';
+            soundWave.classList.remove('playing');
+        };
+
+        currentUtterance.onerror = () => {
+            isSpeaking = false;
+            btnPlayPodcast.textContent = '▶ 播放 PODCAST';
+            soundWave.classList.remove('playing');
+        };
+
+        window.speechSynthesis.speak(currentUtterance);
+    }
+
+    function pausePodcastSpeech() {
+        window.speechSynthesis.pause();
+        isSpeaking = false;
+        btnPlayPodcast.textContent = '▶ 繼續播放';
+        soundWave.classList.remove('playing');
+    }
+
+    function stopPodcastSpeech() {
+        window.speechSynthesis.cancel();
+        isSpeaking = false;
+        btnPlayPodcast.textContent = '▶ 播放 PODCAST';
+        soundWave.classList.remove('playing');
+    }
 
     // Drawers and Modals Toggle
     function toggleDrawer(drawer) {
@@ -219,9 +298,24 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         slideStage.className = `slide-stage animation-${animationType}`;
 
+        // Stop current speech on slide change
+        stopPodcastSpeech();
+
         // Header updating
         moduleBadge.textContent = slide.module || 'Module';
         headerTitle.textContent = slide.title || '行政法基本概念';
+
+        // Update Podcast Episode Title & Transcript Box
+        if (podcastEpisodeTitle) {
+            podcastEpisodeTitle.textContent = `【PODCAST 第 ${slide.id} 集】${slide.title}`;
+        }
+        if (podcastTranscriptContent) {
+            const transcript = slide.podcastScript || slide.notes || `歡迎收聽第 ${slide.id} 集 Podcast 廣播！本頁聚焦於 ${slide.title} 之核心法理剖析。`;
+            podcastTranscriptContent.innerHTML = `
+                <p><strong>🎙️【PODCAST 廣播導師口述逐字稿（單集預估導讀長度：約 1 分鐘）】</strong></p>
+                <p style="margin-top:8px;">${transcript}</p>
+            `;
+        }
 
         // Update Notes Drawer Content
         notesContent.innerHTML = slide.notes ? `
