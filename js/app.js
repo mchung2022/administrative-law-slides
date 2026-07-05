@@ -2,63 +2,33 @@
  * 行政法基本概念 102 頁互動簡報 - 核心引擎與控制邏輯
  */
 
-document.addEventListener('DOMContentLoaded', () => {
-    let currentSlideIndex = 0;
-    const slides = window.slidesData || [];
-    const totalSlides = slides.length;
-
-    // DOM Elements
-    const slideStage = document.getElementById('slide-stage');
-    const currentSlideNumEl = document.getElementById('current-slide-num');
-    const totalSlideNumEl = document.getElementById('total-slide-num');
-    const progressBar = document.getElementById('progress-bar');
-    const headerTitle = document.getElementById('header-title');
-    const moduleBadge = document.getElementById('module-badge');
-
-    const btnPrev = document.getElementById('btn-prev');
-    const btnNext = document.getElementById('btn-next');
-    const btnToc = document.getElementById('btn-toc');
-    const btnNotes = document.getElementById('btn-notes');
-    const btnHelp = document.getElementById('btn-help');
-    const btnFullscreen = document.getElementById('btn-fullscreen');
-
-    const themeSelect = document.getElementById('theme-select');
-    const animationSelect = document.getElementById('animation-select');
-    const jumpInput = document.getElementById('jump-input');
-    const btnJump = document.getElementById('btn-jump');
-
-    // Initialize Theme Switcher from localStorage
-    const savedTheme = localStorage.getItem('adminLawSlideTheme') || 'theme-dark';
-    document.body.className = savedTheme;
-    if (themeSelect) {
-        themeSelect.value = savedTheme;
-        themeSelect.addEventListener('change', (e) => {
-            const selectedTheme = e.target.value;
-            document.body.className = selectedTheme;
-            localStorage.setItem('adminLawSlideTheme', selectedTheme);
-        });
+    function getSlides() {
+        return window.slidesData || [];
     }
 
-    const notesDrawer = document.getElementById('notes-drawer');
-    const closeNotes = document.getElementById('close-notes');
-    const notesContent = document.getElementById('notes-content');
+    // Initialize UI with data readiness retry
+    function initApp() {
+        const slides = getSlides();
+        if (slides.length === 0) {
+            setTimeout(initApp, 50);
+            return;
+        }
+        totalSlideNumEl.textContent = slides.length;
+        renderTOC();
+        renderSlide(currentSlideIndex);
+        updateProgress();
+    }
 
-    const tocDrawer = document.getElementById('toc-drawer');
-    const closeToc = document.getElementById('close-toc');
-    const tocList = document.getElementById('toc-list');
-    const tocSearch = document.getElementById('toc-search');
+    initApp();
 
-    const helpModal = document.getElementById('help-modal');
-    const closeHelp = document.getElementById('close-help');
-
-    // Initialize UI
-    totalSlideNumEl.textContent = totalSlides;
-    renderTOC();
-    renderSlide(currentSlideIndex);
+    function getTotalSlides() {
+        return getSlides().length;
+    }
 
     // Navigation handlers
     function goToSlide(index) {
-        if (index < 0 || index >= totalSlides) return;
+        const total = getTotalSlides();
+        if (index < 0 || index >= total) return;
         currentSlideIndex = index;
         renderSlide(currentSlideIndex);
         updateProgress();
@@ -70,7 +40,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     btnJump.addEventListener('click', () => {
         const val = parseInt(jumpInput.value, 10);
-        if (val >= 1 && val <= totalSlides) {
+        const total = getTotalSlides();
+        if (val >= 1 && val <= total) {
             goToSlide(val - 1);
             jumpInput.value = '';
         }
@@ -158,6 +129,7 @@ document.addEventListener('DOMContentLoaded', () => {
     btnStopPodcast.addEventListener('click', stopPodcastSpeech);
 
     function playPodcastSpeech() {
+        const slides = getSlides();
         const slide = slides[currentSlideIndex];
         if (!slide) return;
 
@@ -247,6 +219,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // TOC Generation & Search
     function renderTOC() {
         tocList.innerHTML = '';
+        const slides = getSlides();
         slides.forEach((slide, idx) => {
             const item = document.createElement('div');
             item.className = `toc-item ${idx === currentSlideIndex ? 'active' : ''}`;
@@ -289,16 +262,18 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function updateProgress() {
+        const total = getTotalSlides();
         currentSlideNumEl.textContent = currentSlideIndex + 1;
-        const percentage = ((currentSlideIndex + 1) / totalSlides) * 100;
+        const percentage = total > 0 ? ((currentSlideIndex + 1) / total) * 100 : 0;
         progressBar.style.width = `${percentage}%`;
 
         btnPrev.disabled = currentSlideIndex === 0;
-        btnNext.disabled = currentSlideIndex === totalSlides - 1;
+        btnNext.disabled = currentSlideIndex === total - 1;
     }
 
     // Slide Rendering Engine
     function renderSlide(index) {
+        const slides = getSlides();
         const slide = slides[index];
         if (!slide) return;
 
