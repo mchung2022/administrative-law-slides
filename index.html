@@ -12036,16 +12036,65 @@ function startApp() {
             return window.slidesData;
         }
         if (!window._fallbackSlidesData) {
-            console.log("Using instant fail-safe built-in 500 slides data generator...");
             window._fallbackSlidesData = generateFallback500Slides();
         }
         return window._fallbackSlidesData;
     }
 
+    let currentSlideIndex = 0;
+
+    // DOM Elements
+    const slideStage = document.getElementById('slide-stage');
+    const currentSlideNumEl = document.getElementById('current-slide-num');
+    const totalSlideNumEl = document.getElementById('total-slide-num');
+    const progressBar = document.getElementById('progress-bar');
+    const headerTitle = document.getElementById('header-title');
+    const moduleBadge = document.getElementById('module-badge');
+
+    const btnPrev = document.getElementById('btn-prev');
+    const btnNext = document.getElementById('btn-next');
+    const btnToc = document.getElementById('btn-toc');
+    const btnNotes = document.getElementById('btn-notes');
+    const btnHelp = document.getElementById('btn-help');
+    const btnFullscreen = document.getElementById('btn-fullscreen');
+
+    const themeSelect = document.getElementById('theme-select');
+    const animationSelect = document.getElementById('animation-select');
+    const jumpInput = document.getElementById('jump-input');
+    const btnJump = document.getElementById('btn-jump');
+
+    const notesDrawer = document.getElementById('notes-drawer');
+    const closeNotes = document.getElementById('close-notes');
+    const notesContent = document.getElementById('notes-content');
+
+    const tocDrawer = document.getElementById('toc-drawer');
+    const closeToc = document.getElementById('close-toc');
+    const tocList = document.getElementById('toc-list');
+    const tocSearch = document.getElementById('toc-search');
+
+    const helpModal = document.getElementById('help-modal');
+    const closeHelp = document.getElementById('close-help');
+
+    // Initialize Theme Switcher from localStorage
+    const savedTheme = localStorage.getItem('adminLawSlideTheme') || 'theme-dark';
+    if (document.body) {
+        document.body.className = savedTheme;
+    }
+    if (themeSelect) {
+        themeSelect.value = savedTheme;
+        themeSelect.addEventListener('change', (e) => {
+            const selectedTheme = e.target.value;
+            if (document.body) {
+                document.body.className = selectedTheme;
+            }
+            localStorage.setItem('adminLawSlideTheme', selectedTheme);
+        });
+    }
+
     // Initialize UI instantly
     function initApp() {
         const slides = getSlides();
-        totalSlideNumEl.textContent = slides.length;
+        if (totalSlideNumEl) totalSlideNumEl.textContent = slides.length;
         renderTOC();
         renderSlide(currentSlideIndex);
         updateProgress();
@@ -12067,27 +12116,32 @@ function startApp() {
         updateTOCActiveState();
     }
 
-    btnNext.addEventListener('click', () => goToSlide(currentSlideIndex + 1));
-    btnPrev.addEventListener('click', () => goToSlide(currentSlideIndex - 1));
+    if (btnNext) btnNext.addEventListener('click', () => goToSlide(currentSlideIndex + 1));
+    if (btnPrev) btnPrev.addEventListener('click', () => goToSlide(currentSlideIndex - 1));
 
-    btnJump.addEventListener('click', () => {
-        const val = parseInt(jumpInput.value, 10);
-        const total = getTotalSlides();
-        if (val >= 1 && val <= total) {
-            goToSlide(val - 1);
-            jumpInput.value = '';
-        }
-    });
+    if (btnJump) {
+        btnJump.addEventListener('click', () => {
+            if (!jumpInput) return;
+            const val = parseInt(jumpInput.value, 10);
+            const total = getTotalSlides();
+            if (val >= 1 && val <= total) {
+                goToSlide(val - 1);
+                jumpInput.value = '';
+            }
+        });
+    }
 
-    jumpInput.addEventListener('keydown', (e) => {
-        if (e.key === 'Enter') {
-            btnJump.click();
-        }
-    });
+    if (jumpInput) {
+        jumpInput.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' && btnJump) {
+                btnJump.click();
+            }
+        });
+    }
 
     // Keyboard Shortcuts
     document.addEventListener('keydown', (e) => {
-        if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+        if (e.target && (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA')) return;
 
         switch (e.key) {
             case 'ArrowRight':
@@ -12129,20 +12183,20 @@ function startApp() {
 
     // Drawers and Modals Toggle
     function toggleDrawer(drawer) {
-        drawer.classList.toggle('active');
+        if (drawer) drawer.classList.toggle('active');
     }
     function toggleModal(modal) {
-        modal.classList.toggle('active');
+        if (modal) modal.classList.toggle('active');
     }
 
-    btnToc.addEventListener('click', () => toggleDrawer(tocDrawer));
-    closeToc.addEventListener('click', () => tocDrawer.classList.remove('active'));
+    if (btnToc) btnToc.addEventListener('click', () => toggleDrawer(tocDrawer));
+    if (closeToc) closeToc.addEventListener('click', () => tocDrawer && tocDrawer.classList.remove('active'));
 
-    btnNotes.addEventListener('click', () => toggleDrawer(notesDrawer));
-    closeNotes.addEventListener('click', () => notesDrawer.classList.remove('active'));
+    if (btnNotes) btnNotes.addEventListener('click', () => toggleDrawer(notesDrawer));
+    if (closeNotes) closeNotes.addEventListener('click', () => notesDrawer && notesDrawer.classList.remove('active'));
 
-    btnHelp.addEventListener('click', () => toggleModal(helpModal));
-    closeHelp.addEventListener('click', () => helpModal.classList.remove('active'));
+    if (btnHelp) btnHelp.addEventListener('click', () => toggleModal(helpModal));
+    if (closeHelp) closeHelp.addEventListener('click', () => helpModal && helpModal.classList.remove('active'));
 
     btnFullscreen.addEventListener('click', toggleFullscreen);
 
@@ -12218,22 +12272,24 @@ function startApp() {
         if (!slide) return;
 
         // Apply selected or random animation class
-        let animationType = animationSelect.value;
+        let animationType = animationSelect ? animationSelect.value : 'slide-fade';
         if (animationType === 'random') {
             const availableAnims = ['slide-fade', 'zoom', 'flip', 'bounce'];
             animationType = availableAnims[Math.floor(Math.random() * availableAnims.length)];
         }
-        slideStage.className = `slide-stage animation-${animationType}`;
+        if (slideStage) slideStage.className = `slide-stage animation-${animationType}`;
 
         // Header updating
-        moduleBadge.textContent = slide.module || 'Module';
-        headerTitle.textContent = slide.title || '行政法基本概念';
+        if (moduleBadge) moduleBadge.textContent = slide.module || 'Module';
+        if (headerTitle) headerTitle.textContent = slide.title || '行政法基本概念';
 
         // Update Notes Drawer Content
-        notesContent.innerHTML = slide.notes ? `
-            <p><strong>【本頁的核心教導與法理延伸】</strong></p>
-            <p>${slide.notes}</p>
-        ` : '<p>本頁無特別補充說明。</p>';
+        if (notesContent) {
+            notesContent.innerHTML = slide.notes ? `
+                <p><strong>【本頁的核心教導與法理延伸】</strong></p>
+                <p>${slide.notes}</p>
+            ` : '<p>本頁無特別補充說明。</p>';
+        }
 
         // Render Slide by Type
         switch (slide.type) {
@@ -12521,14 +12577,19 @@ function startApp() {
             }
         }
 
-        slideStage.querySelector('#btn-reset-match').addEventListener('click', () => {
-            userPairs.clear();
-            leftCards.forEach(c => c.classList.remove('paired', 'selected', 'correct', 'wrong'));
-            rightCards.forEach(c => c.classList.remove('paired', 'selected', 'correct', 'wrong'));
-            feedback.textContent = '';
-        });
+        const btnResetMatch = slideStage.querySelector('#btn-reset-match');
+        if (btnResetMatch) {
+            btnResetMatch.addEventListener('click', () => {
+                userPairs.clear();
+                leftCards.forEach(c => c.classList.remove('paired', 'selected', 'correct', 'wrong'));
+                rightCards.forEach(c => c.classList.remove('paired', 'selected', 'correct', 'wrong'));
+                if (feedback) feedback.textContent = '';
+            });
+        }
 
-        slideStage.querySelector('#btn-check-match').addEventListener('click', () => {
+        const btnCheckMatch = slideStage.querySelector('#btn-check-match');
+        if (btnCheckMatch) {
+            btnCheckMatch.addEventListener('click', () => {
             if (userPairs.size < slide.pairs.length) {
                 feedback.style.color = 'var(--accent-amber)';
                 feedback.textContent = '⚠️ 請完成所有項目的連線配對後再進行驗證！';
@@ -12552,6 +12613,7 @@ function startApp() {
                 feedback.textContent = `❌ 配對完成，答對 ${correctCount} / ${slide.pairs.length} 組。按下重置再試一次！`;
             }
         });
+        }
     }
 
     // Utility shuffle array function
