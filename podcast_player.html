@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎙️ 行政法 500 頁旗艦總複習 — 30 分鐘特企 Podcast 廣播影音面板</title>
+    <style>
+        :root {
+            --bg-dark: #0f172a;
+            --card-bg: #1e293b;
+            --card-border: rgba(245, 158, 11, 0.3);
+            --primary: #f59e0b;
+            --primary-glow: rgba(245, 158, 11, 0.4);
+            --accent: #3b82f6;
+            --accent-glow: rgba(59, 130, 246, 0.4);
+            --text-main: #f8fafc;
+            --text-sub: #94a3b8;
+            --radius: 12px;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: "Microsoft JhengHei", system-ui, -apple-system, sans-serif; }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            min-height: 100vh;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .header-container {
+            width: 100%;
+            max-width: 1200px;
+            text-align: center;
+            margin-bottom: 24px;
+            padding: 24px;
+            background: linear-gradient(135deg, #1e1b4b, #0f172a);
+            border: 1px solid rgba(99, 102, 241, 0.4);
+            border-radius: var(--radius);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        .badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #f59e0b, #d97706);
+            color: #fff;
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+
+        .header-container h1 {
+            font-size: 1.8rem;
+            color: #fbbf24;
+            margin-bottom: 8px;
+        }
+
+        .header-container p {
+            color: var(--text-sub);
+            font-size: 1rem;
+        }
+
+        .main-layout {
+            width: 100%;
+            max-width: 1200px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+        }
+
+        @media (max-width: 960px) {
+            .main-layout { grid-template-columns: 1fr; }
+        }
+
+        .player-card {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: var(--radius);
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+        }
+
+        /* Waveform Canvas */
+        .visualizer-box {
+            width: 100%;
+            height: 120px;
+            background: #020617;
+            border: 1px solid rgba(245, 158, 11, 0.3);
+            border-radius: 8px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        canvas {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+
+        /* Audio Control Bar */
+        .controls-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .btn-play {
+            background: linear-gradient(135deg, #f59e0b, #d97706);
+            border: none;
+            color: #fff;
+            padding: 12px 24px;
+            border-radius: 30px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn-play:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px var(--primary-glow);
+        }
+
+        .btn-ctrl {
+            background: #334155;
+            border: 1px solid #475569;
+            color: #fff;
+            padding: 8px 14px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 0.9rem;
+        }
+
+        .btn-ctrl:hover { background: #475569; }
+
+        .progress-container {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .time-label {
+            font-size: 0.85rem;
+            color: var(--text-sub);
+            font-family: monospace;
+            min-width: 45px;
+        }
+
+        input[type="range"] {
+            flex: 1;
+            accent-color: var(--primary);
+            cursor: pointer;
+        }
+
+        /* Speed & Volume Control */
+        .settings-bar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: #0f172a;
+            padding: 10px 16px;
+            border-radius: 8px;
+            font-size: 0.9rem;
+        }
+
+        select {
+            background: #1e293b;
+            color: #fff;
+            border: 1px solid #475569;
+            padding: 4px 8px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        /* Chapter List Pane */
+        .chapter-pane {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: var(--radius);
+            padding: 20px;
+            max-height: 520px;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .chapter-pane h3 {
+            color: #fbbf24;
+            font-size: 1.2rem;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .chapter-card {
+            background: #0f172a;
+            border: 1px solid #334155;
+            border-radius: 8px;
+            padding: 12px 16px;
+            cursor: pointer;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .chapter-card:hover {
+            border-color: var(--primary);
+            background: #1e1b4b;
+        }
+
+        .chapter-card.active {
+            border-color: #f59e0b;
+            background: linear-gradient(135deg, rgba(245, 158, 11, 0.15), rgba(59, 130, 246, 0.15));
+        }
+
+        .chapter-info h4 {
+            font-size: 0.95rem;
+            color: #f8fafc;
+            margin-bottom: 4px;
+        }
+
+        .chapter-info p {
+            font-size: 0.8rem;
+            color: var(--text-sub);
+        }
+
+        .time-tag {
+            background: #3b82f6;
+            color: #fff;
+            font-size: 0.75rem;
+            padding: 4px 8px;
+            border-radius: 12px;
+            font-weight: bold;
+            font-family: monospace;
+        }
+
+        /* Transcript Live View Panel */
+        .transcript-panel {
+            grid-column: 1 / -1;
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: var(--radius);
+            padding: 24px;
+            margin-top: 10px;
+        }
+
+        .transcript-panel h3 {
+            color: #38bdf8;
+            font-size: 1.3rem;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .transcript-content {
+            background: #0f172a;
+            border: 1px solid #334155;
+            border-radius: 8px;
+            padding: 20px;
+            max-height: 400px;
+            overflow-y: auto;
+            line-height: 1.8;
+            font-size: 1.05rem;
+            color: #cbd5e1;
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header-container">
+        <span class="badge">🎙️ 廣播影音旗艦特輯</span>
+        <h1>行政法 500 頁旗艦總複習 — 30 分鐘特企 Podcast 廣播講堂</h1>
+        <p>整合 108 課綱公民與社會素養、80+ 臺灣新聞時事、司法院大法官解釋與行政訴訟救濟 | 臺灣法治教育與大考公民命題研究組</p>
+    </div>
+
+    <div class="main-layout">
+        <!-- Player Card -->
+        <div class="player-card">
+            <div class="visualizer-box">
+                <canvas id="waveformCanvas"></canvas>
+            </div>
+
+            <audio id="mainAudio" src="podcast_audio_30min.wav" preload="metadata"></audio>
+
+            <div class="progress-container">
+                <span class="time-label" id="currentTime">00:00</span>
+                <input type="range" id="seekSlider" min="0" max="1800" value="0">
+                <span class="time-label" id="durationTime">30:00</span>
+            </div>
+
+            <div class="controls-row">
+                <button class="btn-ctrl" id="btnRewind">⏪ -10s</button>
+                <button class="btn-play" id="btnPlay">▶️ 播放節目</button>
+                <button class="btn-ctrl" id="btnForward">⏩ +10s</button>
+            </div>
+
+            <div class="settings-bar">
+                <div>
+                    <label>播放倍速：</label>
+                    <select id="speedSelect">
+                        <option value="0.75">0.75x</option>
+                        <option value="1.0" selected>1.0x (標準口播)</option>
+                        <option value="1.25">1.25x (快速複習)</option>
+                        <option value="1.5">1.5x (考前衝刺)</option>
+                        <option value="2.0">2.0x (極速過頭)</option>
+                    </select>
+                </div>
+                <div>
+                    <label>音量調整：</label>
+                    <input type="range" id="volumeSlider" min="0" max="1" step="0.05" value="1" style="width: 80px;">
+                </div>
+            </div>
+        </div>
+
+        <!-- Chapter Jump Markers Pane -->
+        <div class="chapter-pane" id="chapterPane">
+            <h3>📑 30 分鐘十大單元時間軸章節（點擊快速跳轉）</h3>
+            <!-- Chapters generated by JS -->
+        </div>
+
+        <!-- Synchronized Transcript Panel -->
+        <div class="transcript-panel">
+            <h3>📜 當前廣播單元同步逐字劇本 (Live Transcript)</h3>
+            <div class="transcript-content" id="transcriptBox">
+點擊「播放節目」或上方章節，開啟 30 分鐘廣播聽講體驗！
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const chapters = [
+            { id: 1, start: 0, end: 180, time: "00:00", title: "Module 1：節目開場與行政法基本概念與現代法治國", topic: "公權力行政 vs 私經濟國庫行政與給付行政理念" },
+            { id: 2, start: 180, end: 360, time: "03:00", title: "Module 2：依法行政原則與司法院釋字第 443 號層次化法律保留", topic: "消極依法行政（法律優位）與積極依法行政（法律保留）" },
+            { id: 3, start: 360, end: 540, time: "06:00", title: "Module 3：一般法律原則（一）：平等原則與比例原則過磅審查", topic: "行政程序法第 6 條與第 7 條（適當性、必要性、狹義比例性）" },
+            { id: 4, start: 540, end: 720, time: "09:00", title: "Module 4：一般法律原則（二）：信賴保護、誠信原則與裁量控制", topic: "行政程序法第 8 條與第 10 條（裁量濫用、裁量逾越、裁量怠惰）" },
+            { id: 5, start: 720, end: 900, time: "12:00", title: "Module 5：行政行為態樣（一）：行政處分黃金六要素與無效撤銷", topic: "行政程序法第 92 條、第 111 條與第 117 條全解密" },
+            { id: 6, start: 900, end: 1080, time: "15:00", title: "Module 6：行政行為態樣（二）：行政契約、事實行為與行政指導", topic: "行政程序法第 135 條、第 159 條與第 165 條實務劃分" },
+            { id: 7, start: 1080, end: 1260, time: "18:00", title: "Module 7：行政制裁：行政罰法原理與新聞真實裁罰", topic: "行政罰法定原則、主觀歸責（第 7 條）與一行為不二罰（第 24 條）" },
+            { id: 8, start: 1260, end: 1440, time: "21:00", title: "Module 8：行政執行法與即時強制", topic: "金錢給付執行、行為不行為執行（代履行/怠金）與即時強制" },
+            { id: 9, start: 1440, end: 1620, time: "24:00", title: "Module 9：行政救濟體系：訴願與行政訴訟三大類型", topic: "訴願 30 日不變期間、訴願前置與行政訴訟三級二審制" },
+            { id: 10, start: 1620, end: 1800, time: "27:00", title: "Module 10：國家責任全剖析與大考結業錦囊", topic: "國家賠償法第 2 條與第 3 條、協議先行程序與總複習結業叮嚀" }
+        ];
+
+        let fullScriptData = {};
+
+        // Fetch full JSON transcript if available
+        fetch('scratch/podcast_script_30min.json')
+            .then(res => res.json())
+            .then(data => {
+                data.forEach(item => { fullScriptData[item.id] = item.script; });
+                updateTranscriptView(1);
+            })
+            .catch(() => {});
+
+        const audio = document.getElementById('mainAudio');
+        const btnPlay = document.getElementById('btnPlay');
+        const btnRewind = document.getElementById('btnRewind');
+        const btnForward = document.getElementById('btnForward');
+        const seekSlider = document.getElementById('seekSlider');
+        const currentTimeEl = document.getElementById('currentTime');
+        const durationTimeEl = document.getElementById('durationTime');
+        const speedSelect = document.getElementById('speedSelect');
+        const volumeSlider = document.getElementById('volumeSlider');
+        const chapterPane = document.getElementById('chapterPane');
+        const transcriptBox = document.getElementById('transcriptBox');
+        const canvas = document.getElementById('waveformCanvas');
+        const ctx = canvas.getContext('2d');
+
+        // Render Chapters
+        chapters.forEach((ch, idx) => {
+            const card = document.createElement('div');
+            card.className = `chapter-card ${idx === 0 ? 'active' : ''}`;
+            card.setAttribute('data-id', ch.id);
+            card.innerHTML = `
+                <div class="chapter-info">
+                    <h4>${ch.title}</h4>
+                    <p>📌 ${ch.topic}</p>
+                </div>
+                <span class="time-tag">${ch.time}</span>
+            `;
+            card.addEventListener('click', () => {
+                audio.currentTime = ch.start;
+                audio.play();
+                btnPlay.textContent = "⏸️ 暫停節目";
+                setActiveChapter(ch.id);
+            });
+            chapterPane.appendChild(card);
+        });
+
+        function setActiveChapter(id) {
+            document.querySelectorAll('.chapter-card').forEach(c => {
+                if (parseInt(c.getAttribute('data-id')) === id) {
+                    c.classList.add('active');
+                    c.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                } else {
+                    c.classList.remove('active');
+                }
+            });
+            updateTranscriptView(id);
+        }
+
+        function updateTranscriptView(id) {
+            if (fullScriptData[id]) {
+                transcriptBox.textContent = fullScriptData[id];
+            }
+        }
+
+        function formatTime(sec) {
+            const m = Math.floor(sec / 60);
+            const s = Math.floor(sec % 60);
+            return `${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
+        }
+
+        audio.addEventListener('loadedmetadata', () => {
+            seekSlider.max = Math.floor(audio.duration || 1800);
+            durationTimeEl.textContent = formatTime(audio.duration || 1800);
+        });
+
+        audio.addEventListener('timeupdate', () => {
+            seekSlider.value = Math.floor(audio.currentTime);
+            currentTimeEl.textContent = formatTime(audio.currentTime);
+            
+            // Auto update active chapter
+            const curSec = audio.currentTime;
+            const curCh = chapters.find(c => curSec >= c.start && curSec < c.end);
+            if (curCh) setActiveChapter(curCh.id);
+        });
+
+        btnPlay.addEventListener('click', () => {
+            if (audio.paused) {
+                audio.play();
+                btnPlay.textContent = "⏸️ 暫停節目";
+            } else {
+                audio.pause();
+                btnPlay.textContent = "▶️ 播放節目";
+            }
+        });
+
+        btnRewind.addEventListener('click', () => { audio.currentTime = Math.max(0, audio.currentTime - 10); });
+        btnForward.addEventListener('click', () => { audio.currentTime = Math.min(audio.duration || 1800, audio.currentTime + 10); });
+
+        seekSlider.addEventListener('input', (e) => {
+            audio.currentTime = parseFloat(e.target.value);
+        });
+
+        speedSelect.addEventListener('change', (e) => {
+            audio.playbackRate = parseFloat(e.target.value);
+        });
+
+        volumeSlider.addEventListener('input', (e) => {
+            audio.volume = parseFloat(e.target.value);
+        });
+
+        // Dynamic Neon Visualizer Canvas Animation
+        function resizeCanvas() {
+            canvas.width = canvas.offsetWidth;
+            canvas.height = canvas.offsetHeight;
+        }
+        window.addEventListener('resize', resizeCanvas);
+        resizeCanvas();
+
+        let animStep = 0;
+        function drawWaveform() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            const isPlaying = !audio.paused;
+            const width = canvas.width;
+            const height = canvas.height;
+            const centerY = height / 2;
+
+            ctx.lineWidth = 2.5;
+            ctx.strokeStyle = isPlaying ? "#f59e0b" : "#475569";
+
+            ctx.beginPath();
+            const bars = 60;
+            const barWidth = width / bars;
+
+            for (let i = 0; i < bars; i++) {
+                const amp = isPlaying ? Math.sin(animStep * 0.1 + i * 0.3) * 35 + Math.random() * 20 : 4;
+                const x = i * barWidth + barWidth / 2;
+                ctx.moveTo(x, centerY - amp);
+                ctx.lineTo(x, centerY + amp);
+            }
+            ctx.stroke();
+
+            if (isPlaying) animStep++;
+            requestAnimationFrame(drawWaveform);
+        }
+        drawWaveform();
+    </script>
+</body>
+</html>
