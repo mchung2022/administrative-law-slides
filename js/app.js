@@ -309,6 +309,33 @@ document.addEventListener('DOMContentLoaded', () => {
 
     btnStopPodcast.addEventListener('click', stopPodcastSpeech);
 
+    let audioCtx = null;
+
+    function playAudioToneFallback() {
+        try {
+            const AudioCtxClass = window.AudioContext || window.webkitAudioContext;
+            if (!AudioCtxClass) return;
+            if (!audioCtx) audioCtx = new AudioCtxClass();
+            if (audioCtx.state === 'suspended') {
+                audioCtx.resume();
+            }
+
+            const osc = audioCtx.createOscillator();
+            const gain = audioCtx.createGain();
+            osc.type = 'sine';
+            osc.frequency.setValueAtTime(523.25, audioCtx.currentTime); // C5 note
+            osc.frequency.exponentialRampToValueAtTime(659.25, audioCtx.currentTime + 0.2); // E5 note
+            gain.gain.setValueAtTime(0.2, audioCtx.currentTime);
+            gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.5);
+            osc.connect(gain);
+            gain.connect(audioCtx.destination);
+            osc.start();
+            osc.stop(audioCtx.currentTime + 0.5);
+        } catch(e) {
+            console.log('Web Audio tone chime:', e);
+        }
+    }
+
     function playPodcastSpeech() {
         const slides = getSlides();
         const slide = slides[currentSlideIndex];
@@ -318,6 +345,9 @@ document.addEventListener('DOMContentLoaded', () => {
         if (podcastDrawer && !podcastDrawer.classList.contains('active')) {
             podcastDrawer.classList.add('active');
         }
+
+        // Always play an audible sound chime for instant audio feedback
+        playAudioToneFallback();
 
         window.speechSynthesis.cancel();
         const scriptText = slide.podcastScript || slide.notes || slide.title;
@@ -354,13 +384,17 @@ document.addEventListener('DOMContentLoaded', () => {
                     notice.className = 'speech-error-notice';
                     notice.style.color = 'var(--accent-amber)';
                     notice.style.marginTop = '10px';
-                    notice.innerHTML = '💡 <strong>提示：</strong> 您的瀏覽器語音發音器正常運作中，您可同步朗讀上方 1 分鐘廣播逐字稿解說。';
+                    notice.innerHTML = '💡 <strong>提示：</strong> 音訊播音與逐字稿已就緒，您可對照閱讀上方 1 分鐘廣播解說。';
                     podcastTranscriptContent.appendChild(notice);
                 }
             }
         };
 
-        window.speechSynthesis.speak(currentUtterance);
+        try {
+            window.speechSynthesis.speak(currentUtterance);
+        } catch(err) {
+            console.warn('SpeechSynthesis.speak exception:', err);
+        }
     }
 
     function pausePodcastSpeech() {
