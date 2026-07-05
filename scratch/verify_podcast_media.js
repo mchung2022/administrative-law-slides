@@ -4,7 +4,7 @@ const path = require('path');
 console.log("=== 30-Minute Podcast Media & Web Player Verification Audit ===");
 
 const rootDir = path.join(__dirname, '..');
-const wavPath = path.join(rootDir, 'podcast_audio_30min.wav');
+const audioPath = path.join(rootDir, 'podcast_audio_30min.mp3');
 const playerPath = path.join(rootDir, 'podcast_player.html');
 const docxPath = path.join(rootDir, '行政法30分鐘Podcast廣播講堂_完整廣播劇本.docx');
 const jsonPath = path.join(__dirname, 'podcast_script_30min.json');
@@ -22,12 +22,12 @@ function audit(name, cond, details = '') {
     }
 }
 
-// 1. WAV Audio File Audit
-const wavExists = fs.existsSync(wavPath);
-audit('WAV Audio File Existence Audit', wavExists);
-if (wavExists) {
-    const wavSizeMB = fs.statSync(wavPath).size / (1024 * 1024);
-    audit('WAV Audio File Size Audit (>10MB)', wavSizeMB > 10, `(Size: ${wavSizeMB.toFixed(2)} MB)`);
+// 1. MP3 Audio File Audit
+const audioExists = fs.existsSync(audioPath);
+audit('Neural Broadcast MP3 Audio File Existence Audit', audioExists);
+if (audioExists) {
+    const sizeMB = fs.statSync(audioPath).size / (1024 * 1024);
+    audit('Neural Broadcast Audio File Size Audit (>1MB)', sizeMB > 1, `(Size: ${sizeMB.toFixed(2)} MB)`);
 }
 
 // 2. Word Script Document Audit
@@ -53,7 +53,7 @@ const playerExists = fs.existsSync(playerPath);
 audit('Web Player HTML (podcast_player.html) Audit', playerExists);
 if (playerExists) {
     const htmlText = fs.readFileSync(playerPath, 'utf8');
-    audit('Audio Source Binding Audit', htmlText.includes('podcast_audio_30min.wav'));
+    audit('Audio Source Binding Audit', htmlText.includes('podcast_audio_30min.mp3'));
     audit('Canvas Visualizer Binding Audit', htmlText.includes('waveformCanvas'));
     audit('10 Chapter Markers Audit', htmlText.includes('chapters = ['));
 }
