@@ -12705,12 +12705,63 @@ function startApp() {
         if (moduleBadge) moduleBadge.textContent = slide.module || 'Module';
         if (headerTitle) headerTitle.textContent = slide.title || '行政法基本概念';
 
-        // Update Notes Drawer Content
+        // Update Notes Drawer Content with Podcast Broadcast Audio & Notes
         if (notesContent) {
-            notesContent.innerHTML = slide.notes ? `
-                <p><strong>【本頁的核心教導與法理延伸】</strong></p>
-                <p>${slide.notes}</p>
-            ` : '<p>本頁無特別補充說明。</p>';
+            const pScript = slide.podcastScript || `哈囉各位同學！歡迎來到今天的行政法 Podcast 廣播講堂，我是你們的法治導師。今天第 ${slide.id} 集我們要探討的主題是【${slide.title}】。在【${slide.module || '行政法總複習'}】單元中，本頁涵蓋了極為關鍵的法理。當行政機關行使公權力時，必須嚴格遵循依法行政原則與比例原則。希望同學們在大考中輕鬆奪取頂標分數！`;
+            
+            notesContent.innerHTML = `
+                <div class="podcast-bar">
+                    <div class="podcast-info">
+                        <div class="podcast-avatar">🎙️</div>
+                        <div class="podcast-text-wrap">
+                            <h5>第 ${slide.id} 頁廣播解說：${slide.title}</h5>
+                            <p>108課綱公民與社會素養大師 | 1 分鐘單頁精華口播</p>
+                        </div>
+                    </div>
+                    <div class="podcast-controls">
+                        <button class="btn-play-slide-podcast podcast-btn" id="btn-slide-tts">▶️ 播放廣播解說</button>
+                    </div>
+                </div>
+
+                <div class="podcast-transcript-box">
+                    <strong>📜 本頁廣播逐字稿 (Live Podcast Script)：</strong>
+                    <p style="margin-top:8px; line-height:1.7; color: var(--text-secondary);">${pScript}</p>
+                </div>
+
+                <div class="slide-notes-box" style="margin-top:20px;">
+                    <p><strong>💡【本頁的核心教導與法理延伸】：</strong></p>
+                    <p>${slide.notes || '本頁無特別補充說明。'}</p>
+                </div>
+            `;
+
+            // Attach Speech TTS listener to button
+            const btnSlideTts = notesContent.querySelector('#btn-slide-tts');
+            if (btnSlideTts) {
+                btnSlideTts.addEventListener('click', () => {
+                    const speech = window.speechSynthesis;
+                    if (!speech) return;
+                    
+                    if (speech.speaking) {
+                        speech.cancel();
+                        btnSlideTts.textContent = "▶️ 播放廣播解說";
+                    } else {
+                        speech.cancel();
+                        const cleanText = pScript.replace(/【.*?】/g, '').replace(/（.*?）/g, '');
+                        const utter = new SpeechSynthesisUtterance(cleanText);
+                        utter.lang = 'zh-TW';
+                        utter.rate = 1.0;
+                        
+                        const voices = speech.getVoices();
+                        const zhVoice = voices.find(v => v.lang.includes('zh-TW') || v.lang.includes('zh'));
+                        if (zhVoice) utter.voice = zhVoice;
+                        
+                        utter.onend = () => { btnSlideTts.textContent = "▶️ 播放廣播解說"; };
+                        
+                        btnSlideTts.textContent = "⏸️ 暫停廣播";
+                        speech.speak(utter);
+                    }
+                });
+            }
         }
 
         // Render Slide by Type
